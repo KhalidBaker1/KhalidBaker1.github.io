@@ -1,0 +1,226 @@
+
+/* Base body styles */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-top: 56px; /* offset for fixed navbar height */
+  scroll-behavior: smooth; /* smooth scrolling for anchor links */
+}
+/* Navbar fixed height offset handled above */
+/* Hero / Home Section */
+#home {
+  position: relative;
+  color: white;
+  height: 80vh;
+  min-height: 400px;
+  /* Flexbox for centering content */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  /* Background image with dark overlay */
+  background: url('https://source.unsplash.com/1600x900/?technology,abstract') no-repeat center center/cover;
+  overflow: hidden;
+}
+/* Animated gradient overlay covering entire hero */
+#home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(270deg, #0d6efd, #6f42c1, #6610f2, #0d6efd);
+  background-size: 800% 800%;
+  animation: gradientBG 20s ease infinite;
+  opacity: 0.6;
+  z-index: 0;
+  border-radius: 0;
+}
+/*
+  Keyframes for the animated gradient background on hero overlay
+  Creates smooth horizontal gradient movement effect
+*/
+@keyframes gradientBG {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
+}
+/* Ensure immediate children content is above the overlay */
+#home > * {
+  position: relative; /* place content above overlay */
+  z-index: 1;
+}
+/* Hero title styles */
+#home h1 {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 3px 3px 8px rgba(0,0,0,0.7);
+  letter-spacing: 2px;
+  line-height: 1.1;
+}
+/* Hero subtitle styles */
+#home p {
+  font-weight: 500;
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  max-width: 600px;
+}
+/* Hero button styling with icon alignment */
+#home .btn {
+  font-size: 1.25rem;
+  padding: 0.9rem 2.5rem;
+  border-radius: 50px;
+  box-shadow: 0 8px 20px rgba(13,123,255,0.6);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* SVG icon in button style */
+#home .btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: white;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  transition: stroke 0.3s ease;
+}
+/* Hover effect for hero button */
+#home .btn:hover {
+  background-color: #0b5ed7;
+  box-shadow: 0 12px 30px rgba(11,94,215,0.9);
+  text-decoration: none;
+}
+/* Change icon stroke color on hover */
+#home .btn:hover svg {
+  stroke: #ffe;
+}
+/* Decorative bottom wave SVG for smooth section transition */
+#home svg.bottom-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  fill: white;
+  z-index: 1;
+}
+/* Section titles with underline style */
+.section-title {
+  border-bottom: 3px solid #0d6efd;
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.75rem;
+  color: #0d6efd;
+}
+/* Project cards shadow and transition on hover */
+.project-card:hover {
+  box-shadow: 0 0 15px rgba(13, 110, 253, 0.5);
+  transition: 0.3s ease-in-out;
+}
+/* Footer styling including gradient background */
+footer {
+  background: linear-gradient(135deg, #2c3e50, #4a689d);
+  color: white;
+  padding: 2rem 1rem 1.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  box-shadow: inset 0 1px 10px rgba(255,255,255,0.1);
+  font-size: 1rem;
+  user-select: none; /* prevent text selection */
+}
+/* Footer social icons container styles */
+footer .social-icons {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+/* Social icon links base styles with spacing and sizing */
+footer .social-icons a {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+}
+/* SVG icons inside social links with subtle shadow */
+footer .social-icons a svg {
+  width: 24px;
+  height: 24px;
+  transition: filter 0.3s ease;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.3));
+}
+/* Hover effect for social icons */
+footer .social-icons a:hover {
+  background-color: #0d6efd;
+  box-shadow: 0 4px 14px rgba(13, 110, 253, 0.9);
+  transform: scale(1.15);
+}
+/* Glow effect on social icon SVG on hover */
+footer .social-icons a:hover svg {
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.9));
+}
+/* Copyright text style in footer */
+footer .copyright {
+  border-top: 1px solid rgba(255,255,255,0.3);
+  padding-top: 1rem;
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+}
+/* Skill items layout with icon and progress bar */
+.skill-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  gap: 1rem;
+}
+/* Skill icon size */
+.skill-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+/* Skill progress bar container grows to fill width */
+.skill-bar-container {
+  flex-grow: 1;
+}
+/* About me section row alignment */
+#about .row {
+  align-items: center;
+}
+/* About me profile image styling */
+#about img {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  margin-bottom: 1rem;
+}
+/* Responsive typography and layout adjustments */
+@media (max-width: 600px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+  body {
+    padding-top: 70px;
+  }
+  #home h1 {
+    font-size: 2.8rem;
+  }
+  #home p {
+    font-size: 1.2rem;
+  }
+}

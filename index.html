@@ -1,16 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio van Khalid Baker</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Professional Portfolio</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <nav>
-        <ul><a href="index.html">Home</a></ul>
-    </nav>
-    <article>Hollo</article>
+
+  <!-- Navigation bar with brand and links -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <!-- Brand / site name -->
+      <a class="navbar-brand fw-bold" href="#">Your Name</a>
+      <!-- Mobile toggler button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav fs-5">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Home Section / Hero with animated background -->
+    <section id="home">
+      <h1>Welcome to my Portfolio</h1>
+      <p>Discover my work, skills, and projects</p>
+      <a href="#about" class="btn btn-primary" tabindex="0">
+        Get to Know Me
+        <!-- SVG arrow icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none" aria-hidden="true" focusable="false">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+
+      <!-- Decorative bottom wave shape -->
+      <svg class="bottom-wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" aria-hidden="true" focusable="false">
+        <path fill="#f8f9fa" fill-opacity="1" d="M0,224L48,229.3C96,235,192,245,288,229.3C384,213,480,171,576,144C672,117,768,107,864,122.7C960,139,1056,181,1152,181.3C1248,181,1344,139,1392,117.3L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+      </svg>
+    </section>
+
+    <div class="container mt-5">
+      <!-- About Me Section -->
+      <section id="about" class="mb-5">
+        <h2 class="section-title">About Me</h2>
+        <div class="row gy-4">
+          <!-- Profile Image -->
+          <div class="col-md-4 text-center">
+            <img src="https://i.pravatar.cc/400" alt="Photo of Your Name" />
+          </div>
+          <!-- Description Text -->
+          <div class="col-md-8">
+            <p>
+              I am a creative and driven web developer passionate about building modern, responsive, and user-friendly websites. With experience in both front-end and back-end technologies, I deliver high-quality projects that perfectly match my clients' needs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section with icons and progress bars -->
+      <section id="skills" class="mb-5">
+        <h2 class="section-title">Skills</h2>
+
+        <!-- HTML5 Skill -->
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" class="skill-icon" />
+          <div class="skill-bar-container">
+            <label for="html5" class="form-label fw-semibold mb-1">HTML5</label>
+            <div class="progress" style="height: 20px;">
+              <div
+                id="html5"
+                class="progress-bar bg-primary"
+                role="progressbar"
+                style="width: 64%;"
+                aria-valuenow="64"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >64%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CSS3 Skill -->
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" class="skill-icon" />
+          <div class="skill-bar-container">
+            <label for="css3" class="form-label fw-semibold mb-1">CSS3</label>
+            <div class="progress" style="height: 20px;">
+              <div
+                id="css3"
+                class="progress-bar bg-info"
+                role="progressbar"
+                style="width: 60%;"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >60%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- JavaScript Skill -->
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="skill-icon" />
+          <div class="skill-bar-container">
+            <label for="javascript" class="form-label fw-semibold mb-1">JavaScript</label>
+            <div class="progress" style="height: 20px;">
+              <div
+                id="javascript"
+                class="progress-bar bg-warning text-dark"
+                role="progressbar"
+                style="width: 60%;"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >60%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bootstrap Skill -->
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" alt="Bootstrap" class="skill-icon" />
+          <div class="skill-bar-container">
+            <label for="bootstrap" class="form-label fw-semibold mb-1">Bootstrap</label>
+            <div class="progress" style="height: 20px;">
+              <div
+                id="bootstrap"
+                class="progress-bar bg-danger"
+                role="progressbar"
+                style="width: 60%;"
+                aria-valuenow="60"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >60%</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PHP Skill -->
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="skill-icon" />
+          <div class="skill-bar-container">
+            <label for="php" class="form-label fw-semibold mb-1">PHP</label>
+            <div class="progress" style="height: 20px;">
+              <div
+                id="php"
+                class="progress-bar bg-secondary"
+                role="progressbar"
+                style="width: 43%;"
+                aria-valuenow="43"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >43%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section showcasing portfolio items -->
+      <section id="portfolio" class="mb-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="row">
+          <!-- Single project card -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+              <img src="https://source.unsplash.com/600x400/?website" class="card-img-top" alt="Project 1" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Project Name 1</h5>
+                <p class="card-text flex-grow-1">A modern responsive website built with Bootstrap and custom JavaScript features.</p>
+                <a href="#" class="btn btn-primary mt-auto" target="_blank" rel="noopener">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single project card -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+              <img src="https://source.unsplash.com/600x400/?app" class="card-img-top" alt="Project 2" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Project Name 2</h5>
+                <p class="card-text flex-grow-1">An interactive web application designed with a focus on UX and mobile optimization.</p>
+                <a href="#" class="btn btn-primary mt-auto" target="_blank" rel="noopener">View Project</a>
+              </div>
+            </div>
+          </div>
+          <!-- Single project card -->
+          <div class="col-md-4 mb-4">
+            <div class="card project-card h-100">
+              <img src="https://source.unsplash.com/600x400/?design" class="card-img-top" alt="Project 3" />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Project Name 3</h5>
+                <p class="card-text flex-grow-1">Creative design and implementation of a custom portfolio website for a client.</p>
+                <a href="#" class="btn btn-primary mt-auto" target="_blank" rel="noopener">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section with form -->
+      <section id="contact" class="mb-5">
+        <h2 class="section-title">Contact</h2>
+        <form>
+          <!-- Name input -->
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name" required />
+          </div>
+          <!-- Email input -->
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
+          </div>
+          <!-- Message textarea -->
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Type your message here..." required></textarea>
+          </div>
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer with social links and copyright -->
+  <footer>
+    <div class="container">
+      <nav class="social-icons" role="navigation" aria-label="Social media links">
+        <!-- GitHub link -->
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+            <title>GitHub</title>
+            <path d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38v-1.33c-2.23.49-2.7-1.07-2.7-1.07-.36-.91-.89-1.15-.89-1.15-.73-.5.06-.49.06-.49.81.06 1.24.84 1.24.84.72 1.23 1.87.88 2.33.67.07-.52.28-.88.5-1.08-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.22 2.2.82a7.72 7.72 0 0 1 2-.27c.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.91.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn link -->
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+            <title>LinkedIn</title>
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.473 0 16 .513 16 1.146v13.708c0 .633-.527 1.146-1.175 1.146H1.175C.527 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c-.837 0-1.356-.555-1.356-1.248 0-.707.535-1.248 1.388-1.248.853 0 1.356.541 1.372 1.248 0 .693-.52 1.248-1.404 1.248h-.001zm4.908 8.212h2.4v-4.168c0-.223.016-.447.082-.606.18-.447.591-.911 1.281-.911.903 0 1.266.688 1.266 1.697v3.988h2.4V9.98c0-2.22-1.182-3.252-2.763-3.252-1.28 0-1.845.7-2.165 1.193v.025h-.016a5.01 5.01 0 0 1 .016-.025V6.169h-2.4c.03.716 0 7.225 0 7.225z"/>
+          </svg>
+        </a>
+        <!-- Twitter link -->
+        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg role="img" xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+            <title>Twitter</title>
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.007-.422A6.68 6.68 0 0 0 16 3.542a6.56 6.56 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.56 6.56 0 0 1-2.084.797 3.286 3.286 0 0 0-5.596 2.994 9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0-.445 1.65 3.286 3.286 0 0 0 1.462 2.74A3.203 3.203 0 0 1 .64 6.575v.041a3.285 3.285 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.615-.057 3.283 3.283 0 0 0 3.067 2.279 6.588 6.588 0 0 1-4.862 1.36 9.345 9.345 0 0 0 5.034 1.475"/>
+          </svg>
+        </a>
+      </nav>
+      <div class="copyright">
+        &copy; 2024 Your Name. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap Bundle with Popper JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+</content>
+</create_file>

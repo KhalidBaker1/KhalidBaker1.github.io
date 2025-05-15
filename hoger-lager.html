@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Higher / Lower Game</title>
+    <link rel="stylesheet" href="css/hoger-lager.css">
+</head>
+<body>
+    
+    <div class="container">
+        <button class="backBtn" onclick='window.location.href = "index.html"'>back</button>
+        <header>
+            
+            <div id="leaderboard">
+                <h2>Leaderboard</h2>
+                <ul id="leaderboard-list">
+                    <!-- Leaderboard names will appear here -->
+                </ul>
+            </div>
+            <div id="spin-section">
+                <h2>Spin Machine</h2>
+                <p id="spin-result">Result: -</p>
+                <button id="spin-btn" disabled>Spin</button>
+            </div>
+        </header>
+ 
+        <h1>Higher & Lower</h1>
+ 
+        <div id="game-area">
+            <div id="dice-area">
+                <p id="dice1">🎲</p>
+                <p id="dice2">🎲</p>
+            </div>
+            <div id="controls">
+                <button id="higher">Higher</button>
+                <button id="lower">Lower</button>
+            </div>
+            <p id="result">Roll the dice!</p>
+        </div>
+ 
+        <div id="scoreboard">
+            <h2>Scoreboard</h2>
+            <p id="credits">Credits: 10</p>
+            <p id="score">Score: 0</p>
+        </div>
+ 
+        <div id="game-over" class="hidden">
+            <h2>Game Over!</h2>
+            <form id="leaderboard-form">
+                <label for="player-name">Enter your name:</label>
+                <input type="text" id="player-name" required>
+                <button type="submit">Save</button>
+            </form>
+        </div>
+ 
+        <footer>
+            <h2>Game Rules</h2>
+            <ul>
+                <li>You start the game with 10 credits.</li>
+                <li>Each time you guess correctly, you earn 5 points.</li>
+                <li>If you guess wrong, you lose 1 credit.</li>
+                <li>If you guess correctly 5 times, you can spin the spin machine once.</li>
+                <li>The spin machine adds a random number (5 to 25) to your score, multiplied by 5.</li>
+                <li>The game ends when you have 0 credits.</li>
+                <li>After losing, you can add your name to the leaderboard.</li>
+            </ul>
+        </footer>
+    </div>
+   
+    <script src="js/hoger-lager.js"></script>
+</body>
+</html>

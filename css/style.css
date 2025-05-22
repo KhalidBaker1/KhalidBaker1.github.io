@@ -5,6 +5,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 56px; /* offset for fixed navbar height */
   scroll-behavior: smooth; /* smooth scrolling for anchor links */
+  cursor: default;
 }
 /* Navbar fixed height offset handled above */
 /* Hero / Home Section */

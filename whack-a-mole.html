@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Whack a Sonic</title>
-    <link rel="stylesheet" href="css/whack.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/whack.css" />
+  </head>
+  <body>
     <div class="BTN">
-        <button class="wBtn" onclick='window.location.href = "index.html"'>Back</button>
+      <button class="wBtn" onclick='window.location.href = "index.html"'>
+        Back
+      </button>
     </div>
     <div class="container">
-        <h1>Whack-a-Game</h1>
-        <div class="rules">
-            <h2>Game Rules</h2>
-            <p>Click on the green squares to earn points.</p>
-            <p>Avoid clicking on the red square, or the game is over!</p>
-            <p>You have 1 minute. The game speeds up to 2x in the last 20 seconds.</p>
-        </div>
-        <div class="game-board">
-            <div class="hole" id="hole1"></div>
-            <div class="hole" id="hole2"></div>
-            <div class="hole" id="hole3"></div>
-            <div class="hole" id="hole4"></div>
-            <div class="hole" id="hole5"></div>
-            <div class="hole" id="hole6"></div>
-            <div class="hole" id="hole7"></div>
-            <div class="hole" id="hole8"></div>
-            <div class="hole" id="hole9"></div>
-        </div>
-        <div class="score-board">
-            Score: <span id="score">0</span>
-        </div>
-        <div class="timer">
-            Time: <span id="timer">60</span> seconds
-        </div>
-        <div id="game-over" class="hidden">
-            <h2>Game Over</h2>
-            <p>You are dead. The game will restart...</p>
-        </div>
+      <h1>Whack-a-Game</h1>
+      <div class="rules">
+        <h2>Game Rules</h2>
+        <p>Click on the green squares to earn points.</p>
+        <p>Avoid clicking on the red square, or the game is over!</p>
+        <p>
+          You have 1 minute. The game speeds up to 2x in the last 20 seconds.
+        </p>
+      </div>
+      <div class="game-board">
+        <div class="hole" id="hole1"></div>
+        <div class="hole" id="hole2"></div>
+        <div class="hole" id="hole3"></div>
+        <div class="hole" id="hole4"></div>
+        <div class="hole" id="hole5"></div>
+        <div class="hole" id="hole6"></div>
+        <div class="hole" id="hole7"></div>
+        <div class="hole" id="hole8"></div>
+        <div class="hole" id="hole9"></div>
+      </div>
+      <div class="score-board">Score: <span id="score">0</span></div>
+      <div class="timer">Time: <span id="timer">60</span> seconds</div>
+      <div id="game-over" class="hidden">
+        <h2>Game Over</h2>
+        <p>You are dead. The game will restart...</p>
+      </div>
     </div>
     <script src="js/whack.js"></script>
-</body>
+  </body>
 </html>

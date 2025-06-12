@@ -1,18 +1,18 @@
-const bord = document.getElementById('bord');
+const bord = document.getElementById("bord");
 const RIJEN = 6;
 const KOLLOMNEN = 7;
-let huidigeSpeler = 'rood';
+let huidigeSpeler = "rood";
 let spelbord = Array.from({ length: RIJEN }, () => Array(KOLLOMNEN).fill(null));
 
 const maakBord = () => {
-  bord.innerHTML = '';
+  bord.innerHTML = "";
   for (let rij = 0; rij < RIJEN; rij++) {
     for (let kol = 0; kol < KOLLOMNEN; kol++) {
-      const cel = document.createElement('div');
-      cel.classList.add('cel');
+      const cel = document.createElement("div");
+      cel.classList.add("cel");
       cel.dataset.rij = rij;
       cel.dataset.kol = kol;
-      cel.addEventListener('click', handelCelKlik);
+      cel.addEventListener("click", handelCelKlik);
       bord.appendChild(cel);
     }
   }
@@ -30,11 +30,11 @@ const handelCelKlik = (event) => {
       }, 10);
     } else if (isBordVol()) {
       setTimeout(() => {
-        alert('Gelijkspel!');
+        alert("Gelijkspel!");
         resetSpel();
       }, 10);
     } else {
-      huidigeSpeler = huidigeSpeler === 'rood' ? 'geel' : 'rood';
+      huidigeSpeler = huidigeSpeler === "rood" ? "geel" : "rood";
     }
   }
 };
@@ -50,9 +50,11 @@ const vindBeschikbareRij = (kol) => {
 
 const plaatsSchijf = (rij, kol) => {
   spelbord[rij][kol] = huidigeSpeler;
-  const cel = document.querySelector(`.cel[data-rij="${rij}"][data-kol="${kol}"]`);
-  const schijf = document.createElement('div');
-  schijf.classList.add('schijf', huidigeSpeler);
+  const cel = document.querySelector(
+    `.cel[data-rij="${rij}"][data-kol="${kol}"]`
+  );
+  const schijf = document.createElement("div");
+  schijf.classList.add("schijf", huidigeSpeler);
   cel.appendChild(schijf);
 };
 
@@ -61,7 +63,7 @@ const controleerWinst = (rij, kol) => {
     controleerRichting(rij, kol, 1, 0) || // Horizontaal
     controleerRichting(rij, kol, 0, 1) || // Verticaal
     controleerRichting(rij, kol, 1, 1) || // Diagonaal naar rechts-onder
-    controleerRichting(rij, kol, 1, -1)   // Diagonaal naar rechts-boven
+    controleerRichting(rij, kol, 1, -1) // Diagonaal naar rechts-boven
   );
 };
 
@@ -76,7 +78,13 @@ const telSchijven = (rij, kol, rijRichting, kolRichting) => {
   let aantal = 0;
   let r = rij + rijRichting;
   let k = kol + kolRichting;
-  while (r >= 0 && r < RIJEN && k >= 0 && k < KOLLOMNEN && spelbord[r][k] === huidigeSpeler) {
+  while (
+    r >= 0 &&
+    r < RIJEN &&
+    k >= 0 &&
+    k < KOLLOMNEN &&
+    spelbord[r][k] === huidigeSpeler
+  ) {
     aantal++;
     r += rijRichting;
     k += kolRichting;
@@ -85,14 +93,13 @@ const telSchijven = (rij, kol, rijRichting, kolRichting) => {
 };
 
 const isBordVol = () => {
-  return spelbord.every(rij => rij.every(cel => cel !== null));
+  return spelbord.every((rij) => rij.every((cel) => cel !== null));
 };
 
 const resetSpel = () => {
   spelbord = Array.from({ length: RIJEN }, () => Array(KOLLOMNEN).fill(null));
-  huidigeSpeler = 'rood';
+  huidigeSpeler = "rood";
   maakBord();
 };
 
 maakBord();
-

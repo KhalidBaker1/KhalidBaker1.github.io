@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Khalid Baker | Software Developer</title>
+    <meta name="description" content="Curriculum vitae van Khalid Baker, software development student en stagiair bij Competa IT.">
+    <meta name="theme-color" content="#07100b">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cv.css">
+</head>
+<body>
+    <!-- Iconen (één keer gedefinieerd, overal hergebruikt) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+            <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+            <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></symbol>
+            <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+            <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+            <symbol id="i-pin" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+            <symbol id="i-user" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
+            <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></symbol>
+            <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/><path d="M22 10v6"/></symbol>
+            <symbol id="i-code" viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></symbol>
+            <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+            <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+            <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M12 19l-7-7 7-7"/></symbol>
+        </defs>
+    </svg>
+
+    <!-- Werkbalk (alleen op scherm, niet bij printen) -->
+    <div class="toolbar">
+        <a href="index.html" class="tb-btn tb-ghost"><svg><use href="#i-back"/></svg> Portfolio</a>
+        <div class="tb-right">
+            <button type="button" class="tb-btn tb-ghost" onclick="window.print()"><svg><use href="#i-print"/></svg> Printen</button>
+            <a href="docs/Khalid-Baker-CV.pdf" class="tb-btn tb-primary" download><svg><use href="#i-download"/></svg> Download PDF</a>
+        </div>
+    </div>
+
+    <main class="page">
+        <!-- ========== ZIJBALK ========== -->
+        <aside class="side">
+            <div class="photo-wrap">
+                <img src="img/khalid.jpg" alt="Khalid Baker" class="photo" onerror="this.onerror=null;this.src='img/K.png'">
+            </div>
+
+            <section class="side-block">
+                <h2 class="side-title">Contact</h2>
+                <ul class="contact-list">
+                    <li><svg><use href="#i-mail"/></svg><a href="mailto:khalidbaker21@gmail.com">khalidbaker21@gmail.com</a></li>
+                    <li><svg><use href="#i-phone"/></svg><a href="tel:+31638517900">06 38517900</a></li>
+                    <li><svg><use href="#i-linkedin"/></svg><a href="https://www.linkedin.com/in/khalid-baker-0770a5367">Khalid Baker</a></li>
+                    <li><svg><use href="#i-github"/></svg><a href="https://github.com/KhalidBaker1">github.com/KhalidBaker1</a></li>
+                    <li><svg><use href="#i-globe"/></svg><a href="https://khalidbaker1.github.io/">khalidbaker1.github.io</a></li>
+                    <li><svg><use href="#i-pin"/></svg><span>Pijnacker</span></li>
+                </ul>
+            </section>
+
+            <section class="side-block">
+                <h2 class="side-title">Vaardigheden</h2>
+                <h3 class="skill-cat">Front-end</h3>
+                <ul class="chips">
+                    <li>HTML / CSS</li><li>JavaScript</li><li class="new">TypeScript</li><li>Next.js</li><li>Tailwind</li><li>Bootstrap</li>
+                </ul>
+                <h3 class="skill-cat">Back-end &amp; data</h3>
+                <ul class="chips">
+                    <li>PHP</li><li>Symfony</li><li class="new">Prisma</li><li class="new">PostgreSQL</li><li>MySQL</li>
+                </ul>
+                <h3 class="skill-cat">Tools</h3>
+                <ul class="chips">
+                    <li>Git / GitHub</li><li class="new">Postman</li><li>Linux</li>
+                </ul>
+            </section>
+
+            <section class="side-block">
+                <h2 class="side-title">Talen</h2>
+                <ul class="langs">
+                    <li><span>Nederlands</span><span class="dots" data-lvl="4"><i></i><i></i><i></i><i></i><i></i></span></li>
+                    <li><span>Engels</span><span class="dots" data-lvl="4"><i></i><i></i><i></i><i></i><i></i></span></li>
+                    <li><span>Arabisch</span><span class="dots" data-lvl="3"><i></i><i></i><i></i><i></i><i></i></span></li>
+                </ul>
+            </section>
+
+            <section class="side-block">
+                <h2 class="side-title">Hobby's</h2>
+                <ul class="chips chips-soft">
+                    <li>Programmeren</li><li>Gaming</li><li>Uitgaan met vrienden</li>
+                </ul>
+            </section>
+        </aside>
+
+        <!-- ========== HOOFDDEEL ========== -->
+        <div class="main">
+            <header class="cv-header">
+                <h1 class="name">Khalid Baker</h1>
+                <p class="role">Software Developer</p>
+                <p class="tagline">Student ROC Mondriaan <span class="sep">•</span> Stagiair bij Competa IT</p>
+            </header>
+
+            <section class="block">
+                <h2 class="block-title"><svg><use href="#i-user"/></svg> Profiel</h2>
+                <p class="profile">
+                    Gemotiveerde en positief ingestelde software development student (MBO niveau 4), oorspronkelijk afkomstig uit Koerdistan. Ik bouw zowel front-end als back-end: van responsive websites tot full-stack applicaties met Next.js, <strong>TypeScript</strong>, <strong>Prisma</strong> en <strong>PostgreSQL</strong>. Ik werk gestructureerd, ben altijd op tijd en rond mijn taken binnen de deadline af. Mijn doel is om mij verder te ontwikkelen als developer en in de toekomst mijn eigen succesvolle game te maken.
+                </p>
+            </section>
+
+            <section class="block">
+                <h2 class="block-title"><svg><use href="#i-briefcase"/></svg> Werkervaring</h2>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Stagiair Software Development</h3>
+                        <span class="entry-date">2026 – heden</span>
+                    </div>
+                    <p class="entry-org">Competa IT</p>
+                    <ul class="entry-list">
+                        <li>Meewerken aan softwareprojecten binnen een professioneel ontwikkelteam</li>
+                        <li>Ontwikkelen met TypeScript, Prisma en PostgreSQL</li>
+                        <li>API's testen met Postman</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Medewerker</h3>
+                        <span class="entry-date">07/2026 – heden</span>
+                    </div>
+                    <p class="entry-org">New York Pizza</p>
+                    <ul class="entry-list">
+                        <li>Bestellingen snel en nauwkeurig afhandelen</li>
+                        <li>Klantvriendelijk werken, ook tijdens drukke diensten</li>
+                        <li>Samenwerken in een team</li>
+                    </ul>
+                </article>
+
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Vakkenvuller / Verkoopmedewerker</h3>
+                        <span class="entry-date">02/2023 – 12/2025</span>
+                    </div>
+                    <p class="entry-org">Lidl <span class="sep">•</span> Pijnacker <span class="entry-ref">Contactpersoon: Mohammed Bouchlaghem</span></p>
+                    <ul class="entry-list">
+                        <li>Schappen aanvullen en de winkel netjes houden</li>
+                        <li>Klanten helpen en vragen beantwoorden</li>
+                        <li>Kassawerkzaamheden uitvoeren</li>
+                        <li>Samenwerken in een team en werken volgens planning</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section class="block">
+                <h2 class="block-title"><svg><use href="#i-cap"/></svg> Opleiding</h2>
+                <article class="entry">
+                    <div class="entry-head">
+                        <h3 class="entry-title">Software Developer – MBO niveau 4</h3>
+                        <span class="entry-date">09/2023 – 07/2027</span>
+                    </div>
+                    <p class="entry-org">ROC Mondriaan <span class="sep">•</span> Delft</p>
+                    <p class="entry-text">
+                        Gewerkt met PHP, Symfony, Next.js, HTML, CSS, JavaScript, Bootstrap en Tailwind CSS. Ervaring met responsive websites, databases, front-end én back-end, en samenwerken via GitHub.
+                    </p>
+                </article>
+            </section>
+
+            <section class="block">
+                <h2 class="block-title"><svg><use href="#i-code"/></svg> Projecten</h2>
+                <ul class="projects">
+                    <li><strong>Budget Buddy</strong> <span class="p-desc">Finance-app voor uitgaven en spaardoelen</span> <span class="p-tech">PHP · Symfony · MySQL · Bootstrap</span></li>
+                    <li><strong>SDG Dashboard</strong> <span class="p-desc">Visualisatie van SDG-data</span> <span class="p-tech">Next.js · Tailwind · MySQL</span></li>
+                    <li><strong>Browsergames</strong> <span class="p-desc">Connect Four, Tic Tac Toe, Whack-a-Mole, Higher/Lower</span> <span class="p-tech">HTML · CSS · JavaScript</span></li>
+                </ul>
+                <p class="more">Bekijk al mijn projecten op <a href="https://khalidbaker1.github.io/">khalidbaker1.github.io</a></p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

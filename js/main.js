@@ -33,30 +33,36 @@
 
     'hero.status': 'Currently interning at Competa IT',
     'hero.hello': "Hi, I'm",
-    'hero.subtitle': 'Software development student (MBO level 4) at ROC Mondriaan. I build modern, responsive web applications: from polished front-ends to back-ends with TypeScript, Prisma and PostgreSQL.',
+    'hero.build': 'I build',
+    'hero.subtitle': 'Software developer in training (MBO level 4) at ROC Mondriaan and intern at Competa IT. From front-end to back-end, with Laravel, TypeScript, Prisma and PostgreSQL.',
     'hero.cta1': 'View my work',
     'hero.cta2': 'My CV',
-    'hero.compiled': 'Compiled successfully',
+    'hero.caption': "that's me! :)",
+    'hero.spin': 'OPEN TO OPPORTUNITIES ✦ INTERN @ COMPETA IT ✦',
+    'hero.stickerNew': 'New:',
 
-    'about.kicker': 'About me',
-    'about.title': 'Who am I?',
-    'about.badge': 'Open to opportunities',
+    'bands.text': 'Motivated ✺ Always on time ✺ Eager to learn ✺ Team player ✺ Structured ✺ ',
+
+    'about.title1': 'About',
+    'about.title2': 'me',
     'about.lead': "I'm Khalid: a motivated and positive developer in training, originally from Kurdistan.",
     'about.p1': 'What started as a fascination with games grew into a passion for building complete web applications. At school I work with PHP, Symfony, Next.js and Tailwind CSS, developing both front-end and back-end.',
-    'about.p2': "Right now I'm an intern at <strong>Competa IT</strong> and I'm diving into <strong>TypeScript</strong>, <strong>Prisma</strong>, <strong>PostgreSQL</strong> and <strong>Postman</strong>. I also work at <strong>New York Pizza</strong>. I work in a structured way, I'm always on time and I finish what I start.",
-    'about.p3': 'My big goal? One day releasing my own successful game. 🎮',
-    'about.fact.level': 'Level 4',
-    'about.fact.intern': 'Intern at',
-    'about.fact.country': 'the Netherlands',
-    'about.fact.langs': 'Dutch · English · Arabic',
+    'about.p2': "Right now I'm diving into <strong>Laravel</strong>, <strong>TypeScript</strong>, <strong>Prisma</strong>, <strong>PostgreSQL</strong> and <strong>Postman</strong>. I work in a structured way, I'm always on time and I finish what I start.",
 
-    'stats.projects': 'Projects',
-    'stats.tech': 'Technologies',
-    'stats.years': 'Years of coding',
-    'stats.langs': 'Languages spoken',
+    'bento.now': 'Now',
+    'bento.nowTitle': 'Intern at Competa IT',
+    'bento.nowText': 'Working within a professional development team.',
+    'bento.learning': 'Currently learning',
+    'bento.dreamTitle': 'My dream',
+    'bento.dreamText': 'One day releasing my own successful game.',
+    'bento.langs': 'Languages',
+    'bento.workTitle': 'Also working',
+    'bento.workText': 'At New York Pizza since July.',
+    'stats.projects': 'projects built',
+    'stats.tech': 'tools & technologies',
 
-    'exp.kicker': 'My journey',
-    'exp.title': 'Experience & education',
+    'exp.title1': 'My',
+    'exp.title2': 'journey',
     'exp.now': 'present',
     'exp.current': 'Now',
     'exp.jul': 'Jul',
@@ -72,57 +78,50 @@
     'exp.nyp.b2': 'Staying customer-friendly, even during busy shifts',
     'exp.nyp.b3': 'Working together as a team',
     'exp.roc.role': 'Software Developer · Level 4',
-    'exp.roc.text': 'Worked with PHP, Symfony, Next.js, HTML, CSS, JavaScript, Bootstrap and Tailwind CSS. Experience with responsive websites, databases, both front-end and back-end, and collaborating via GitHub.',
+    'exp.roc.text': 'Worked with PHP, Symfony, Next.js, HTML, CSS, JavaScript, Bootstrap and Tailwind CSS. Experience with responsive websites, databases, front-end and back-end, and collaborating via GitHub.',
     'exp.lidl.role': 'Shelf Stocker / Sales Associate',
     'exp.lidl.b1': 'Restocking shelves and keeping the store tidy',
     'exp.lidl.b2': 'Helping customers and answering questions',
     'exp.lidl.b3': 'Working the checkout',
     'exp.lidl.b4': 'Working as a team and following the schedule',
 
-    'skills.title': 'My toolbox',
-    'skills.sub': 'Technologies I work with. Items marked <span class="new-tag">New</span> are what I\'m learning right now.',
+    'skills.title1': 'My',
+    'skills.sub': 'Everything with a <span class="new-sticker new-sticker-inline">New</span> sticker is what I\'m learning right now.',
     'skills.new': 'New',
     'skills.backend': 'Back-end & data',
     'skills.tools': 'Tools & workflow',
-    'skills.soft': 'Soft skills & languages',
-    'skills.s1': 'Structured',
-    'skills.s2': 'Always on time',
-    'skills.s3': 'Team player',
-    'skills.s4': 'Eager to learn',
     'skills.nl': 'Dutch',
     'skills.en': 'English',
     'skills.ar': 'Arabic',
 
-    'projects.kicker': 'Projects',
-    'projects.title': "Things I've built",
+    'projects.title1': "Things I've",
+    'projects.title2': 'built',
     'projects.all': 'All',
     'projects.web': 'Web apps',
     'projects.bb': 'Personal finance app that helps users keep track of their expenses and savings goals. School project built with Symfony.',
     'projects.sdg': 'Dashboard that collects and clearly visualises data about the Sustainable Development Goals (SDGs).',
     'projects.code': 'View code',
-    'projects.soon': 'In development',
-    'projects.newTitle': 'New full-stack project',
-    'projects.newDesc': "I'm building my next project with my new stack. Keep an eye on this spot!",
-    'projects.soonBtn': 'Coming soon',
     'projects.c4': 'Strategic two-player game with win detection in every direction.',
     'projects.hl': 'Dice game where you guess whether the next roll is higher or lower, with credits, a spin machine and a leaderboard.',
     'projects.wam': 'Arcade game where you hit as many moles as you can before time runs out.',
     'projects.ttt': 'The classic two-player game, with a clean and responsive design.',
     'projects.play': 'Play now',
+    'projects.soon': 'In development',
+    'projects.newTitle': 'New full-stack project',
+    'projects.newDesc': "I'm building my next project with my new stack. Keep an eye on this spot!",
     'projects.more': 'More on GitHub',
 
-    'contact.title': 'Let\'s build something <span class="gradient-text">awesome</span> together.',
-    'contact.sub': 'Looking for a motivated intern or junior developer, or just want to chat? Feel free to send me a message!',
+    'contact.title': 'Let\'s build something <span class="outline">awesome</span>!',
+    'contact.sub': 'Looking for a motivated intern or junior developer, or just want to chat? Feel free to send me a message.',
     'contact.copy': 'Copy',
-    'contact.phone': 'Phone',
-    'contact.download': 'Download PDF',
+    'contact.download': 'Download CV',
 
     'footer.made': 'Built with ❤️ and lots of coffee',
   };
 
-  const ROLES = {
-    nl: ['Software Developer', 'Full-stack student', 'Stagiair @ Competa IT', 'TypeScript-fan', 'Toekomstig game developer'],
-    en: ['Software Developer', 'Full-stack student', 'Intern @ Competa IT', 'TypeScript fan', 'Future game developer'],
+  const FLIP = {
+    nl: ['websites', 'web-apps', "API's", 'dashboards', 'games'],
+    en: ['websites', 'web apps', 'APIs', 'dashboards', 'games'],
   };
 
   const UI = {
@@ -161,295 +160,81 @@
 
     const toggle = $('#navToggle');
     if (toggle) {
-      const open = document.body.classList.contains('nav-open');
+      const open = $('#nav').classList.contains('nav-open');
       toggle.setAttribute('aria-label', open ? UI[lang].menuClose : UI[lang].menuOpen);
     }
 
     storage.set('lang', lang);
-    typer.restart();
+    flipper.restart();
   }
 
   /* ---------------------------------------------------------
-     Typewriter voor de rol in de hero
+     Naam in de hero: letters één voor één omhoog laten komen
      --------------------------------------------------------- */
-  const typer = (() => {
-    const el = $('#typedRole');
-    let words = ROLES.nl;
-    let wordIndex = 0;
-    let charIndex = 0;
-    let deleting = false;
+  function splitChars() {
+    $$('.split').forEach((el) => {
+      const chars = Array.from(el.textContent);
+      el.textContent = '';
+      chars.forEach((ch, i) => {
+        const span = document.createElement('span');
+        span.className = 'char';
+        span.style.setProperty('--ci', i);
+        span.textContent = ch;
+        el.appendChild(span);
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------
+     "Ik bouw [woord]" – wisselend woord in het groene blok
+     --------------------------------------------------------- */
+  const flipper = (() => {
+    const word = $('#flipWord');
+    if (!word) return { restart() {}, fit() {} };
+    const box = word.parentElement;
+    let words = FLIP.nl;
+    let index = 0;
     let timer = null;
 
+    function fit() {
+      const cs = getComputedStyle(box);
+      const extra = parseFloat(cs.paddingLeft) + parseFloat(cs.paddingRight)
+        + parseFloat(cs.borderLeftWidth) + parseFloat(cs.borderRightWidth);
+      box.style.width = Math.ceil(word.offsetWidth + extra) + 'px';
+    }
+
+    function show(next) {
+      word.classList.add('out');
+      setTimeout(() => {
+        word.textContent = next;
+        word.classList.remove('out');
+        word.classList.add('in');
+        fit();
+        void word.offsetWidth; // start de animatie opnieuw
+        word.classList.remove('in');
+      }, 300);
+    }
+
     function tick() {
-      const word = words[wordIndex];
-      if (!deleting) {
-        charIndex += 1;
-        el.textContent = word.slice(0, charIndex);
-        if (charIndex >= word.length) {
-          deleting = true;
-          timer = setTimeout(tick, 1900);
-          return;
-        }
-        timer = setTimeout(tick, 60 + Math.random() * 60);
-      } else {
-        charIndex -= 1;
-        el.textContent = word.slice(0, charIndex);
-        if (charIndex <= 0) {
-          deleting = false;
-          wordIndex = (wordIndex + 1) % words.length;
-          timer = setTimeout(tick, 380);
-          return;
-        }
-        timer = setTimeout(tick, 32);
-      }
+      index = (index + 1) % words.length;
+      show(words[index]);
+      timer = setTimeout(tick, 2400);
     }
 
-    function restart(delay = 250) {
-      if (!el) return;
+    function restart() {
       clearTimeout(timer);
-      words = ROLES[lang];
-      wordIndex = 0;
-      charIndex = 0;
-      deleting = false;
-      if (reduceMotion) {
-        el.textContent = words[0];
-        return;
-      }
-      el.textContent = '';
-      timer = setTimeout(tick, delay);
+      words = FLIP[lang];
+      index = 0;
+      word.textContent = words[0];
+      fit();
+      if (!reduceMotion) timer = setTimeout(tick, 2600);
     }
 
-    return { restart };
+    return { restart, fit };
   })();
 
   /* ---------------------------------------------------------
-     Code die zichzelf typt in het hero-venster
-     --------------------------------------------------------- */
-  const CODE = [
-    [['kw', 'import'], ['punc', ' { '], ['type', 'Developer'], ['punc', ' } '], ['kw', 'from'], ['punc', ' '], ['str', '"./dev"'], ['punc', ';']],
-    [],
-    [['kw', 'const'], ['punc', ' '], ['prop', 'khalid'], ['punc', ': '], ['type', 'Developer'], ['punc', ' = {']],
-    [['punc', '  '], ['prop', 'role'], ['punc', ': '], ['str', '"Software Developer"'], ['punc', ',']],
-    [['punc', '  '], ['prop', 'internship'], ['punc', ': '], ['str', '"Competa IT"'], ['punc', ',']],
-    [['punc', '  '], ['prop', 'school'], ['punc', ': '], ['str', '"ROC Mondriaan"'], ['punc', ',']],
-    [['punc', '  '], ['prop', 'stack'], ['punc', ': [']],
-    [['punc', '    '], ['str', '"TypeScript"'], ['punc', ', '], ['str', '"Next.js"'], ['punc', ',']],
-    [['punc', '    '], ['str', '"Prisma"'], ['punc', ', '], ['str', '"PostgreSQL"'], ['punc', ',']],
-    [['punc', '  ],']],
-    [['punc', '  '], ['prop', 'openToWork'], ['punc', ': '], ['bool', 'true'], ['punc', ',']],
-    [['punc', '};']],
-    [],
-    [['prop', 'khalid'], ['punc', '.'], ['fn', 'build'], ['punc', '('], ['str', '"the future"'], ['punc', ');'], ['com', ' // 🚀']],
-  ];
-
-  function typeCode() {
-    const codeEl = $('#codeTyping');
-    const footer = $('#codeFooter');
-    if (!codeEl) return;
-
-    const caret = document.createElement('span');
-    caret.className = 'code-caret';
-
-    const makeLine = () => {
-      const line = document.createElement('span');
-      line.className = 'code-line';
-      codeEl.appendChild(line);
-      return line;
-    };
-    const makeToken = (cls) => {
-      const tok = document.createElement('span');
-      tok.className = 'tok-' + cls;
-      return tok;
-    };
-
-    if (reduceMotion) {
-      CODE.forEach((tokens) => {
-        const line = makeLine();
-        tokens.forEach(([cls, text]) => {
-          const tok = makeToken(cls);
-          tok.textContent = text;
-          line.appendChild(tok);
-        });
-      });
-      if (footer) footer.classList.add('show');
-      return;
-    }
-
-    let lineIndex = 0;
-    let tokenIndex = 0;
-    let chars = null;
-    let charIndex = 0;
-    let lineEl = makeLine();
-    let tokenEl = null;
-    lineEl.appendChild(caret);
-
-    function step() {
-      const tokens = CODE[lineIndex];
-
-      if (tokenIndex >= tokens.length) {
-        lineIndex += 1;
-        tokenIndex = 0;
-        if (lineIndex >= CODE.length) {
-          if (footer) footer.classList.add('show');
-          return;
-        }
-        lineEl = makeLine();
-        lineEl.appendChild(caret);
-        setTimeout(step, 80);
-        return;
-      }
-
-      const [cls, text] = tokens[tokenIndex];
-      if (!chars) {
-        chars = Array.from(text);
-        charIndex = 0;
-        tokenEl = makeToken(cls);
-        lineEl.insertBefore(tokenEl, caret);
-      }
-
-      if (/^\s+$/.test(text)) {
-        tokenEl.textContent = text;
-        charIndex = chars.length;
-      } else {
-        tokenEl.textContent += chars[charIndex];
-        charIndex += 1;
-      }
-
-      if (charIndex >= chars.length) {
-        tokenIndex += 1;
-        chars = null;
-      }
-      setTimeout(step, 10 + Math.random() * 26);
-    }
-
-    setTimeout(step, 1100);
-  }
-
-  /* ---------------------------------------------------------
-     Deeltjes-netwerk op de achtergrond van de hero
-     --------------------------------------------------------- */
-  function heroCanvas() {
-    const canvas = $('#heroCanvas');
-    const hero = $('#home');
-    if (!canvas || !hero || reduceMotion) return;
-
-    const ctx = canvas.getContext('2d');
-    let width = 0;
-    let height = 0;
-    let particles = [];
-    let rafId = null;
-    const mouse = { x: -9999, y: -9999 };
-    const LINK = 120;
-
-    function resize() {
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      width = canvas.clientWidth;
-      height = canvas.clientHeight;
-      canvas.width = Math.round(width * dpr);
-      canvas.height = Math.round(height * dpr);
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-      const count = clamp(Math.floor((width * height) / 15000), 24, 90);
-      particles = Array.from({ length: count }, () => ({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        vx: (Math.random() - 0.5) * 0.35,
-        vy: (Math.random() - 0.5) * 0.35,
-        r: Math.random() * 1.6 + 0.6,
-      }));
-    }
-
-    function frame() {
-      ctx.clearRect(0, 0, width, height);
-
-      for (const p of particles) {
-        p.x += p.vx;
-        p.y += p.vy;
-        if (p.x < 0 || p.x > width) p.vx *= -1;
-        if (p.y < 0 || p.y > height) p.vy *= -1;
-
-        const dx = p.x - mouse.x;
-        const dy = p.y - mouse.y;
-        const dist = Math.hypot(dx, dy);
-        if (dist > 0 && dist < 130) {
-          const force = (130 - dist) / 130;
-          p.x += (dx / dist) * force * 1.6;
-          p.y += (dy / dist) * force * 1.6;
-        }
-      }
-
-      for (let i = 0; i < particles.length; i += 1) {
-        const a = particles[i];
-        for (let j = i + 1; j < particles.length; j += 1) {
-          const b = particles[j];
-          const d = Math.hypot(a.x - b.x, a.y - b.y);
-          if (d < LINK) {
-            ctx.strokeStyle = `rgba(74, 222, 128, ${(1 - d / LINK) * 0.22})`;
-            ctx.lineWidth = 1;
-            ctx.beginPath();
-            ctx.moveTo(a.x, a.y);
-            ctx.lineTo(b.x, b.y);
-            ctx.stroke();
-          }
-        }
-
-        const md = Math.hypot(a.x - mouse.x, a.y - mouse.y);
-        if (md < 190) {
-          ctx.strokeStyle = `rgba(45, 212, 191, ${(1 - md / 190) * 0.45})`;
-          ctx.beginPath();
-          ctx.moveTo(a.x, a.y);
-          ctx.lineTo(mouse.x, mouse.y);
-          ctx.stroke();
-        }
-      }
-
-      ctx.fillStyle = 'rgba(134, 239, 172, 0.75)';
-      for (const p of particles) {
-        ctx.beginPath();
-        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      rafId = requestAnimationFrame(frame);
-    }
-
-    const start = () => { if (!rafId) rafId = requestAnimationFrame(frame); };
-    const stop = () => { if (rafId) { cancelAnimationFrame(rafId); rafId = null; } };
-
-    hero.addEventListener('pointermove', (e) => {
-      const rect = canvas.getBoundingClientRect();
-      mouse.x = e.clientX - rect.left;
-      mouse.y = e.clientY - rect.top;
-    });
-    hero.addEventListener('pointerleave', () => {
-      mouse.x = -9999;
-      mouse.y = -9999;
-    });
-
-    let resizeTimer;
-    window.addEventListener('resize', () => {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(resize, 150);
-    });
-
-    resize();
-
-    if ('IntersectionObserver' in window) {
-      new IntersectionObserver(([entry]) => {
-        if (entry.isIntersecting) start(); else stop();
-      }).observe(hero);
-    } else {
-      start();
-    }
-
-    document.addEventListener('visibilitychange', () => {
-      if (document.hidden) stop();
-      else if (hero.getBoundingClientRect().bottom > 0) start();
-    });
-  }
-
-  /* ---------------------------------------------------------
-     Navigatie: scroll-stijl, mobiel menu, actieve link
+     Navigatie: mobiel menu, verbergen bij omlaag scrollen, actieve link
      --------------------------------------------------------- */
   function navigation() {
     const nav = $('#nav');
@@ -457,62 +242,53 @@
     const links = $$('.nav-link');
 
     const setOpen = (open) => {
-      document.body.classList.toggle('nav-open', open);
       nav.classList.toggle('nav-open', open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? UI[lang].menuClose : UI[lang].menuOpen);
+      if (open) nav.classList.remove('nav-hidden');
     };
 
     toggle.addEventListener('click', () => setOpen(!nav.classList.contains('nav-open')));
     $$('#navLinks a').forEach((a) => a.addEventListener('click', () => setOpen(false)));
     document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setOpen(false); });
-    window.addEventListener('resize', () => { if (window.innerWidth > 860) setOpen(false); });
+    document.addEventListener('click', (e) => { if (!nav.contains(e.target)) setOpen(false); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 880) setOpen(false); });
 
     if ('IntersectionObserver' in window) {
-      const sections = links
-        .map((link) => $(link.getAttribute('href')))
-        .filter(Boolean);
-
+      const band = { rootMargin: '-45% 0px -50% 0px' };
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
           const id = '#' + entry.target.id;
           links.forEach((link) => link.classList.toggle('active', link.getAttribute('href') === id));
         });
-      }, { rootMargin: '-45% 0px -50% 0px' });
+      }, band);
+      links.map((link) => $(link.getAttribute('href'))).filter(Boolean).forEach((s) => observer.observe(s));
 
-      sections.forEach((s) => observer.observe(s));
-      // Bovenaan de pagina is er geen actieve sectie
       new IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) links.forEach((l) => l.classList.remove('active'));
-      }, { rootMargin: '-45% 0px -50% 0px' }).observe($('#home'));
+      }, band).observe($('#home'));
     }
   }
 
   /* ---------------------------------------------------------
-     Alles wat op scroll reageert (één rAF-loop)
+     Scroll: voortgangsbalk + nav verbergen/tonen
      --------------------------------------------------------- */
   function scrollEffects() {
     const nav = $('#nav');
-    const toTop = $('#toTop');
-    const timeline = $('#timeline');
-    const fill = $('#timelineFill');
+    let lastY = window.scrollY;
     let ticking = false;
 
     function update() {
       const y = window.scrollY;
-      const vh = window.innerHeight;
-      const max = document.documentElement.scrollHeight - vh;
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      root.style.setProperty('--progress', max > 0 ? clamp(y / max, 0, 1).toFixed(4) : 0);
 
-      root.style.setProperty('--progress', max > 0 ? (y / max).toFixed(4) : 0);
-      nav.classList.toggle('scrolled', y > 20);
-      toTop.classList.toggle('show', y > 700);
-
-      if (timeline && fill) {
-        const rect = timeline.getBoundingClientRect();
-        const progress = clamp((vh * 0.65 - rect.top) / rect.height, 0, 1);
-        fill.style.setProperty('--tl', progress.toFixed(4));
+      if (!nav.classList.contains('nav-open')) {
+        if (y > lastY + 4 && y > 320) nav.classList.add('nav-hidden');
+        else if (y < lastY - 4 || y <= 320) nav.classList.remove('nav-hidden');
       }
+      lastY = y;
       ticking = false;
     }
 
@@ -524,16 +300,16 @@
     }, { passive: true });
     window.addEventListener('resize', update);
     update();
-
-    toTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
-    });
   }
 
   /* ---------------------------------------------------------
      Elementen laten verschijnen tijdens het scrollen
      --------------------------------------------------------- */
   function reveals() {
+    $$('.tiles').forEach((list) => {
+      $$('.tile', list).forEach((tile, i) => tile.style.setProperty('--ti', i));
+    });
+
     const items = $$('[data-reveal]');
     if (!('IntersectionObserver' in window) || reduceMotion) {
       items.forEach((el) => el.classList.add('revealed'));
@@ -551,19 +327,18 @@
   }
 
   /* ---------------------------------------------------------
-     Tellers in de statistieken
+     Tellers
      --------------------------------------------------------- */
   function counters() {
     const els = $$('.counter');
     const run = (el) => {
       const target = Number(el.dataset.target) || 0;
       if (reduceMotion) { el.textContent = target; return; }
-      const duration = 1600;
-      const startTime = performance.now();
+      const duration = 1500;
+      const start = performance.now();
       const tick = (now) => {
-        const t = clamp((now - startTime) / duration, 0, 1);
-        const eased = 1 - Math.pow(1 - t, 3);
-        el.textContent = Math.round(target * eased);
+        const t = clamp((now - start) / duration, 0, 1);
+        el.textContent = Math.round(target * (1 - Math.pow(1 - t, 3)));
         if (t < 1) requestAnimationFrame(tick);
       };
       requestAnimationFrame(tick);
@@ -582,62 +357,32 @@
   }
 
   /* ---------------------------------------------------------
-     Muis-effecten: glow, 3D-tilt, magnetische knoppen, spotlight
+     Groene cursor-stip die groter wordt boven klikbare dingen
      --------------------------------------------------------- */
-  function pointerEffects() {
+  function cursorDot() {
     if (!finePointer || reduceMotion) return;
+    const dot = $('.cursor-dot');
+    let x = 0;
+    let y = 0;
+    let queued = false;
 
-    const glow = $('.cursor-glow');
-    let gx = 0;
-    let gy = 0;
-    let glowQueued = false;
     window.addEventListener('pointermove', (e) => {
-      gx = e.clientX;
-      gy = e.clientY;
-      if (!glowQueued) {
-        glowQueued = true;
-        requestAnimationFrame(() => {
-          glow.style.setProperty('--cx', gx + 'px');
-          glow.style.setProperty('--cy', gy + 'px');
-          glow.classList.add('is-active');
-          glowQueued = false;
-        });
-      }
+      x = e.clientX;
+      y = e.clientY;
+      if (queued) return;
+      queued = true;
+      requestAnimationFrame(() => {
+        dot.style.setProperty('--cx', x + 'px');
+        dot.style.setProperty('--cy', y + 'px');
+        dot.classList.add('is-active');
+        queued = false;
+      });
     }, { passive: true });
-    document.addEventListener('pointerleave', () => glow.classList.remove('is-active'));
 
-    $$('.tilt').forEach((el) => {
-      const max = Number(el.dataset.tiltMax) || 6;
-      el.addEventListener('pointermove', (e) => {
-        const r = el.getBoundingClientRect();
-        const x = (e.clientX - r.left) / r.width - 0.5;
-        const y = (e.clientY - r.top) / r.height - 0.5;
-        el.style.setProperty('--rx', (-y * max).toFixed(2) + 'deg');
-        el.style.setProperty('--ry', (x * max).toFixed(2) + 'deg');
-      });
-      el.addEventListener('pointerleave', () => {
-        el.style.setProperty('--rx', '0deg');
-        el.style.setProperty('--ry', '0deg');
-      });
+    document.addEventListener('pointerover', (e) => {
+      dot.classList.toggle('is-hover', Boolean(e.target.closest('a, button, .tile, .chips li')));
     });
-
-    $$('.magnetic').forEach((el) => {
-      el.addEventListener('pointermove', (e) => {
-        const r = el.getBoundingClientRect();
-        const x = e.clientX - (r.left + r.width / 2);
-        const y = e.clientY - (r.top + r.height / 2);
-        el.style.transform = `translate(${x * 0.22}px, ${y * 0.3}px)`;
-      });
-      el.addEventListener('pointerleave', () => { el.style.transform = ''; });
-    });
-
-    $$('.spotlight').forEach((el) => {
-      el.addEventListener('pointermove', (e) => {
-        const r = el.getBoundingClientRect();
-        el.style.setProperty('--mx', (e.clientX - r.left) + 'px');
-        el.style.setProperty('--my', (e.clientY - r.top) + 'px');
-      });
-    });
+    document.documentElement.addEventListener('pointerleave', () => dot.classList.remove('is-active'));
   }
 
   /* ---------------------------------------------------------
@@ -645,7 +390,7 @@
      --------------------------------------------------------- */
   function projectFilter() {
     const buttons = $$('.filter-btn');
-    const cards = $$('#projectsGrid .project-card');
+    const cards = $$('#projectsGrid .project');
 
     buttons.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -655,14 +400,13 @@
           b.classList.toggle('active', active);
           b.setAttribute('aria-pressed', String(active));
         });
-
         cards.forEach((card) => {
           const show = filter === 'all' || card.dataset.category === filter;
           card.classList.toggle('is-hidden', !show);
           card.classList.remove('pop');
           if (show) {
             card.classList.add('revealed');
-            void card.offsetWidth; // herstart de animatie
+            void card.offsetWidth; // start de animatie opnieuw
             card.classList.add('pop');
           }
         });
@@ -712,42 +456,30 @@
   }
 
   /* ---------------------------------------------------------
-     Marquee naadloos maken (tweede kopie van de logo's)
-     --------------------------------------------------------- */
-  function marquee() {
-    const group = $('#marqueeGroup');
-    if (!group) return;
-    const clone = group.cloneNode(true);
-    clone.removeAttribute('id');
-    clone.setAttribute('aria-hidden', 'true');
-    group.parentElement.appendChild(clone);
-  }
-
-  /* ---------------------------------------------------------
      Start
      --------------------------------------------------------- */
   const year = $('#year');
   if (year) year.textContent = new Date().getFullYear();
 
-  marquee();
+  splitChars();
   navigation();
   scrollEffects();
   reveals();
   counters();
-  pointerEffects();
+  cursorDot();
   projectFilter();
   copyEmail();
-  heroCanvas();
-  typeCode();
 
-  const langToggle = $('#langToggle');
-  langToggle.addEventListener('click', () => applyLang(lang === 'nl' ? 'en' : 'nl'));
+  $('#langToggle').addEventListener('click', () => applyLang(lang === 'nl' ? 'en' : 'nl'));
 
-  const savedLang = storage.get('lang');
-  if (savedLang === 'en') {
+  if (storage.get('lang') === 'en') {
     applyLang('en');
   } else {
     root.lang = 'nl';
-    typer.restart(1000);
+    flipper.restart();
   }
+
+  // Breedte van het groene woord-blok opnieuw meten zodra de fonts geladen zijn
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(flipper.fit);
+  window.addEventListener('resize', flipper.fit);
 })();

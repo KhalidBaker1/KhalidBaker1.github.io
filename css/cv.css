@@ -26,7 +26,9 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   font-family: var(--font-body);
   color: var(--ink);
-  background: #07100b;
+  background-color: #f3efe4;
+  background-image: radial-gradient(rgba(14, 17, 14, 0.09) 1.1px, transparent 1.3px);
+  background-size: 22px 22px;
   -webkit-font-smoothing: antialiased;
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
@@ -58,9 +60,6 @@ svg {
   max-width: calc(210mm + 32px);
   margin: 0 auto;
   padding: 16px;
-  background: rgba(7, 16, 11, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
 }
 .tb-right { display: flex; gap: 10px; }
 .tb-btn {
@@ -71,14 +70,14 @@ svg {
   border-radius: 999px;
   font: 600 0.88rem var(--font-body);
   cursor: pointer;
-  border: 1px solid transparent;
-  transition: background-color 0.25s, border-color 0.25s, color 0.25s, transform 0.25s;
+  border: 2.5px solid #0e110e;
+  box-shadow: 3px 3px 0 #0e110e;
+  transition: transform 0.18s, box-shadow 0.18s, background-color 0.2s;
 }
-.tb-btn:hover { transform: translateY(-2px); }
-.tb-ghost { background: transparent; color: #e9f5ee; border-color: rgba(255, 255, 255, 0.16); }
-.tb-ghost:hover { border-color: var(--accent); color: #4ade80; }
-.tb-primary { background: var(--accent); color: #04120a; }
-.tb-primary:hover { background: #4ade80; }
+.tb-btn:hover { transform: translate(-2px, -2px); box-shadow: 5px 5px 0 #0e110e; }
+.tb-btn:active { transform: translate(3px, 3px); box-shadow: 0 0 0 #0e110e; }
+.tb-ghost { background: #fffdf8; color: #0e110e; }
+.tb-primary { background: var(--accent); color: #0e110e; }
 
 /* ---------- Pagina (A4) ---------- */
 .page {
@@ -88,7 +87,8 @@ svg {
   display: grid;
   grid-template-columns: 68mm 1fr;
   background: #fff;
-  box-shadow: 0 30px 80px -20px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  border: 2.5px solid #0e110e;
+  box-shadow: 9px 9px 0 #0e110e;
   overflow: hidden;
   animation: pageIn 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
@@ -394,6 +394,7 @@ svg {
     width: 210mm;
     height: 297mm;
     min-height: 0;
+    border: 0;
     box-shadow: none;
     animation: none;
   }

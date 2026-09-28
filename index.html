@@ -1,559 +1,586 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khalid Baker | Web Developer Portfolio</title>
+    <title>Khalid Baker | Software Developer</title>
+    <meta name="description" content="Portfolio van Khalid Baker: software development student aan het ROC Mondriaan en stagiair bij Competa IT. Full-stack met TypeScript, Next.js, PHP/Symfony, Prisma en PostgreSQL.">
+    <meta name="theme-color" content="#07100b">
+    <meta property="og:title" content="Khalid Baker | Software Developer">
+    <meta property="og:description" content="Software development student & stagiair bij Competa IT. Bekijk mijn projecten en CV.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://khalidbaker1.github.io/">
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+    <!-- Laat CSS weten dat JavaScript aan staat (voor de scroll-animaties) -->
+    <script>document.documentElement.classList.add('js');</script>
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#home">Khalid Baker</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <!-- Scroll-voortgang + muis-glow -->
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <div class="cursor-glow" aria-hidden="true"></div>
 
-    <!-- Hero Section -->
-    <section id="home">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Full-Stack Web Developer</h1>
-            <p class="hero-subtitle">Creating modern, responsive web applications with cutting-edge technologies. Passionate about clean code and intuitive design.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">
-                    <span href="#portfolio">View My Work</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                    </svg>
-                </a>
-                <a href="docs/Khalid-Baker-CV.pdf" class="btn btn-outline" download>
-                    <span>Download CV</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container about-container">
-            <h2 class="section-title text-center fade-up">About Me</h2>
-            <div class="about-grid">
-                <div class="fade-up">
-                    <div class="profile-card">
-                        <img src="img/K.png" alt="Khalid Baker" class="profile-image">
-                    </div>
-                </div>
-                <div class="about-content fade-up" style="animation-delay: 0.2s;">
-                    <h3>Creative Web Developer & Problem Solver</h3>
-                    <p>
-                        I'm a passionate full-stack web developer with expertise in modern web technologies. 
-                        My journey in web development combines technical skills with creative problem-solving 
-                        to build applications that are not only functional but also delightful to use.
-                    </p>
-                    <p>
-                        With experience in both front-end and back-end development, I specialize in creating 
-                        responsive, user-friendly web applications. My approach emphasizes clean code, 
-                        performance optimization, and intuitive user experiences.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to 
-                        open-source projects, or enjoying strategy games that sharpen my problem-solving skills.
-                    </p>
-                    
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <span class="stat-number">6+</span>
-                            <span class="stat-label">Projects Completed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Technologies</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">100%</span>
-                            <span class="stat-label">Client Satisfaction</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-<section id="skills" class="skills-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Technical Skills</h2>
-            <p class="section-subtitle">Technologies & tools I work with</p>
-        </div>
-        <div class="skills-grid">
-            <!-- HTML5 -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
-                </div>
-                <div class="skill-info">
-                    <h4>HTML5</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 85%">
-                            <span>85%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CSS3 -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
-                </div>
-                <div class="skill-info">
-                    <h4>CSS3</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 80%">
-                            <span>80%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- JavaScript -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
-                </div>
-                <div class="skill-info">
-                    <h4>JavaScript</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 75%">
-                            <span>75%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Bootstrap -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap">
-                </div>
-                <div class="skill-info">
-                    <h4>Bootstrap/Tailwind</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 85%">
-                            <span>85%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PHP -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
-                </div>
-                <div class="skill-info">
-                    <h4>PHP</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%">
-                            <span>70%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Symfony -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/symfony/symfony-original.svg" alt="Symfony">
-                </div>
-                <div class="skill-info">
-                    <h4>Symfony</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 65%">
-                            <span>65%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Next.js -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
-                </div>
-                <div class="skill-info">
-                    <h4>Next.js</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 60%">
-                            <span>60%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Linux -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
-                </div>
-                <div class="skill-info">
-                    <h4>Linux</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 70%">
-                            <span>70%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- PHPMyAdmin -->
-            <div class="skill-card">
-                <div class="skill-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#6c78af">
-                        <path d="M10 12C10 10.9 10.9 10 12 10S14 10.9 14 12 13.1 14 12 14 10 13.1 10 12M6 12C6 10.9 6.9 10 8 10S10 10.9 10 12 9.1 14 8 14 6 13.1 6 12M18 12C18 10.9 18.9 10 20 10S22 10.9 22 12 21.1 14 20 14 18 13.1 18 12M12 4C7.58 4 4 7.58 4 12C4 16.42 7.58 20 12 20S20 16.42 20 12C20 7.58 16.42 4 12 4M2 12C2 6.48 6.48 2 12 2S22 6.48 22 12C22 17.52 17.52 22 12 22S2 17.52 2 12Z"/>
-                    </svg>
-                </div>
-                <div class="skill-info">
-                    <h4>PHPMyAdmin</h4>
-                    <div class="skill-progress">
-                        <div class="progress-bar" style="width: 75%">
-                            <span>75%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">My Projects</h2>
-            <p class="section-subtitle">Check out some of my recent work</p>
-        </div>
-        <div class="row">
-            <!-- Project 1: Higher-Lower -->
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/projects/higher-lower.png" class="card-img-top" alt="Higher-Lower Game">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Higher-Lower Game</h3>
-                        <p class="project-description">
-                            A dice game where you guess whether the next roll will be higher or lower than the current one.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span>
-                            <span class="tech-badge">CSS</span>
-                            <span class="tech-badge">JavaScript</span>
-                        </div>
-                        <a href="projects/hoger-lager.html" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 2: Tic Tac Toe -->
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/projects/tic-tac-toe.png" class="card-img-top" alt="Tic Tac Toe">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Tic Tac Toe</h3>
-                        <p class="project-description">
-                            Classic two-player game with responsive design and smooth gameplay.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span>
-                            <span class="tech-badge">CSS</span>
-                            <span class="tech-badge">JavaScript</span>
-                        </div>
-                        <a href="projects/tic-tac-toe.html" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 3: Whack-a-Mole -->
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/projects/whack.png" class="card-img-top" alt="Whack-a-Mole">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Whack-a-Mole</h3>
-                        <p class="project-description">
-                            Fun arcade game where you hit moles to score points within time limit.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span>
-                            <span class="tech-badge">CSS</span>
-                            <span class="tech-badge">JavaScript</span>
-                        </div>
-                        <a href="projects/whack-a-mole.html" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4: Connect Four -->
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/projects/connect.png" class="card-img-top" alt="Connect Four">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Connect Four</h3>
-                        <p class="project-description">
-                            Strategic two-player game with win detection for all directions.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">HTML</span>
-                            <span class="tech-badge">CSS</span>
-                            <span class="tech-badge">JavaScript</span>
-                        </div>
-                        <a href="projects/4-op-rij.html" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View Project
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 5: budget-buddy -->
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/projects/budget-buddy.png" class="card-img-top" alt="budget-buddy">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">budget-buddy</h3>
-                        <p class="project-description">
-                            A personal finance management app to help users track expenses and savings.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">PHP</span>
-                            <span class="tech-badge">symfony</span>
-                            <span class="tech-badge">PHPMyadmin</span>
-                            <span class="tech-badge">Bootstrap</span>
-                        </div>
-                        <a href="https://github.com/ROCMondriaanTIN/sd24-project-p05-budget-buddy-geldmaatje" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View github
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 6: SDG Dashboard -->
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="img/projects/SDG.png" class="card-img-top" alt="SDG Dashboard">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">SDG Dashboard</h3>
-                        <p class="project-description">
-                            A dashboard application to track and visualize Sustainable Development Goals (SDGs) data.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">next.js</span>
-                            <span class="tech-badge">PHPMyadmin</span>
-                            <span class="tech-badge">Tailwind</span>
-                        </div>
-                        <a href="https://github.com/ROCMondriaanTIN/sd24-project-p06-dashboard-future-builders" class="btn btn-primary" target="_blank">
-                            <i class="fas fa-external-link-alt me-2"></i>View github
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Project 7: Coming Soon -->
-            <div class="col-md-4 mb-4">
-                <div class="project-card">
-                    <div class="project-image coming-soon-image">
-                        <div class="coming-soon-overlay">
-                            <i class="fas fa-tasks coming-soon-icon"></i>
-                            <span class="coming-soon-text">Coming Soon</span>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Task Management App</h3>
-                        <p class="project-description">
-                            Productivity application with drag-and-drop functionality and team collaboration.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-badge">unkown</span>
-                            <span class="tech-badge">unkown</span>
-                            <span class="tech-badge">unkown</span>
-                        </div>
-                        <a href="#" class="btn btn-secondary disabled">
-                            <i class="fas fa-clock me-2"></i>Coming Soon
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Contact Me</h2>
-            <p class="section-subtitle">Let's connect and work together</p>
-        </div>
-        
-        <div class="row justify-content-center">
-            <!-- Contact Card 1: Phone -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                    </div>
-                    <div class="contact-content">
-                        <h4 class="contact-title">Phone</h4>
-                        <p class="contact-info">+31 6 38517900</p>
-                        <a href="tel:+31638517900" class="contact-link">
-                            <i class="fas fa-phone-alt me-2"></i>Call Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Card 2: Email -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="contact-content">
-                        <h4 class="contact-title">Email</h4>
-                        <p class="contact-info">khalidbaker21@gmail.com</p>
-                        <a href="mailto:khalidbaker21@gmail.com" class="contact-link">
-                            <i class="fas fa-envelope me-2"></i>Send Email
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Card 3: GitHub -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-github"></i>
-                    </div>
-                    <div class="contact-content">
-                        <h4 class="contact-title">GitHub</h4>
-                        <p class="contact-info">@KhalidBaker1</p>
-                        <a href="https://github.com/KhalidBaker1" class="contact-link" target="_blank">
-                            <i class="fab fa-github me-2"></i>View Profile
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact Card 4: LinkedIn -->
-            <div class="col-lg-3 col-md-6 mb-4">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-linkedin"></i>
-                    </div>
-                    <div class="contact-content">
-                        <h4 class="contact-title">LinkedIn</h4>
-                        <p class="contact-info">Khalid Baker</p>
-                        <a href="https://www.linkedin.com/in/khalid-baker-0770a5367" class="contact-link" target="_blank">
-                            <i class="fab fa-linkedin me-2"></i>Connect
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Download Resume Button -->
-        <div class="text-center mt-5">
-            <a href="docs/Khalid-Baker-CV.pdf" class="btn btn-primary btn-lg" download>
-                <i class="fas fa-download me-2"></i>Download Resume
+    <!-- ========== NAVIGATIE ========== -->
+    <header class="nav" id="nav">
+        <div class="container nav-inner">
+            <a href="#home" class="logo" aria-label="Khalid Baker - naar boven">
+                <span class="logo-bracket">&lt;</span>KB<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span>
             </a>
-        </div>
-    </div>
-</section>
 
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <h3 class="footer-logo">Khalid Baker</h3>
-                <p class="footer-tagline">Full-Stack Web Developer</p>
-                <p class="footer-location">
-                    <i class="fas fa-map-marker-alt me-2"></i>Pijnacker, Netherlands
-                </p>
+            <nav class="nav-links" id="navLinks" aria-label="Hoofdmenu">
+                <a href="#about" class="nav-link" data-i18n="nav.about">Over mij</a>
+                <a href="#experience" class="nav-link" data-i18n="nav.experience">Ervaring</a>
+                <a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a>
+                <a href="#projects" class="nav-link" data-i18n="nav.projects">Projecten</a>
+                <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+                <a href="cv.html" class="nav-cv-mobile btn btn-primary"><i class="fas fa-file-lines"></i> <span data-i18n="nav.cv">Bekijk CV</span></a>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" type="button" aria-label="Switch language / Wissel taal">
+                    <span class="lang-opt" data-lang="nl">NL</span>
+                    <span class="lang-opt" data-lang="en">EN</span>
+                </button>
+                <a href="cv.html" class="btn btn-primary btn-sm nav-cv"><i class="fas fa-file-lines"></i> <span data-i18n="nav.cv">Bekijk CV</span></a>
+                <button class="nav-toggle" id="navToggle" type="button" aria-label="Menu openen" aria-expanded="false" aria-controls="navLinks">
+                    <span></span><span></span><span></span>
+                </button>
             </div>
-            
-            <div class="col-md-6">
-                <div class="footer-social">
-                    <a href="tel:+31612345678" class="footer-social-link" aria-label="Phone">
-                        <i class="fas fa-phone"></i>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========== HERO ========== -->
+        <section id="home" class="hero">
+            <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+            <div class="hero-grid" aria-hidden="true"></div>
+            <div class="hero-blob blob-1" aria-hidden="true"></div>
+            <div class="hero-blob blob-2" aria-hidden="true"></div>
+
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <a href="#experience" class="status-pill hero-anim" style="--i:0">
+                        <span class="pulse-dot"></span>
+                        <span data-i18n="hero.status">Nu stagiair bij Competa IT</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="mailto:khalid.baker@example.com" class="footer-social-link" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/KhalidBaker1" class="footer-social-link" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/khalid-baker-0770a5367" class="footer-social-link" target="_blank" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
+
+                    <h1 class="hero-title hero-anim" style="--i:1">
+                        <span data-i18n="hero.hello">Hoi, ik ben</span>
+                        <span class="hero-name">Khalid Baker</span>
+                    </h1>
+
+                    <p class="hero-role hero-anim" style="--i:2">
+                        <span class="role-prompt">&gt;</span>
+                        <span class="role-text" id="typedRole">Software Developer</span><span class="role-caret" aria-hidden="true"></span>
+                    </p>
+
+                    <p class="hero-subtitle hero-anim" style="--i:3" data-i18n="hero.subtitle">
+                        Software development student (niveau 4) aan het ROC Mondriaan. Ik bouw moderne, responsive webapplicaties: van strakke front-ends tot back-ends met TypeScript, Prisma en PostgreSQL.
+                    </p>
+
+                    <div class="hero-buttons hero-anim" style="--i:4">
+                        <a href="#projects" class="btn btn-primary magnetic">
+                            <span data-i18n="hero.cta1">Bekijk mijn werk</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </a>
+                        <a href="cv.html" class="btn btn-ghost magnetic">
+                            <i class="fas fa-file-lines"></i>
+                            <span data-i18n="hero.cta2">Mijn CV</span>
+                        </a>
+                    </div>
+
+                    <div class="hero-socials hero-anim" style="--i:5">
+                        <a href="https://github.com/KhalidBaker1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/khalid-baker-0770a5367" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:khalidbaker21@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+                        <span class="hero-socials-line"></span>
+                        <span class="hero-location"><i class="fas fa-location-dot"></i> Pijnacker, NL</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual hero-anim" style="--i:3">
+                    <div class="code-window tilt" data-tilt-max="6">
+                        <div class="code-header">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                            <span class="code-file"><span class="ts-icon">TS</span> khalid.ts</span>
+                        </div>
+                        <pre class="code-body" aria-label="Codevoorbeeld in TypeScript"><code id="codeTyping"></code></pre>
+                        <div class="code-footer" id="codeFooter">
+                            <span><i class="fas fa-check"></i> <span data-i18n="hero.compiled">Compiled successfully</span></span>
+                            <span class="code-footer-meta">TypeScript · UTF-8</span>
+                        </div>
+                    </div>
+
+                    <div class="float-badge fb-1"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="" width="22" height="22"> TypeScript</div>
+                    <div class="float-badge fb-2"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="" width="22" height="22"> PostgreSQL</div>
+                    <div class="float-badge fb-3"><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="" width="22" height="22"> Prisma</div>
+                    <div class="float-badge fb-4"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="" width="22" height="22"> Postman</div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator" aria-label="Scroll naar beneden">
+                <span class="mouse"><span class="wheel"></span></span>
+            </a>
+        </section>
+
+        <!-- ========== TECH MARQUEE ========== -->
+        <div class="marquee" aria-label="Technologieën">
+            <div class="marquee-track">
+                <!-- Wordt twee keer getoond zodat de animatie naadloos loopt (tweede set via JS) -->
+                <div class="marquee-group" id="marqueeGroup">
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="">TypeScript</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="">JavaScript</span>
+                    <span class="marquee-item"><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="">Next.js</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="">PHP</span>
+                    <span class="marquee-item"><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg" alt="">Symfony</span>
+                    <span class="marquee-item"><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="">Prisma</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="">PostgreSQL</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="">Postman</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="">Tailwind</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="">Bootstrap</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="">HTML5</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="">CSS3</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="">Git</span>
+                    <span class="marquee-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="">Linux</span>
                 </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p class="copyright">&copy; 2026 Khalid Baker. All rights reserved.</p>
-            <p class="copyright">Built with ❤️ and hardwork</p>
+
+        <!-- ========== OVER MIJ ========== -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="section-kicker">01 · <span data-i18n="about.kicker">Over mij</span></span>
+                    <h2 class="section-title" data-i18n="about.title">Wie ben ik?</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-photo" data-reveal="left">
+                        <div class="photo-frame tilt" data-tilt-max="8">
+                            <div class="photo-ring"></div>
+                            <img src="img/khalid.jpg" alt="Foto van Khalid Baker" class="photo-img" width="400" height="400" loading="lazy" onerror="this.onerror=null;this.src='img/K.png'">
+                            <div class="photo-badge">
+                                <span class="pulse-dot"></span>
+                                <span data-i18n="about.badge">Open voor kansen</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-content">
+                        <p class="about-lead" data-reveal data-i18n="about.lead">
+                            Ik ben Khalid: een gemotiveerde en positief ingestelde developer in opleiding, oorspronkelijk afkomstig uit Koerdistan.
+                        </p>
+                        <p data-reveal style="--d:1" data-i18n="about.p1">
+                            Wat begon met een fascinatie voor games, is uitgegroeid tot een passie voor het bouwen van complete webapplicaties. Op school werk ik met PHP, Symfony, Next.js en Tailwind CSS, en ik ontwikkel zowel front-end als back-end.
+                        </p>
+                        <p data-reveal style="--d:2" data-i18n-html="about.p2">
+                            Op dit moment loop ik stage bij <strong>Competa IT</strong> en verdiep ik me in <strong>TypeScript</strong>, <strong>Prisma</strong>, <strong>PostgreSQL</strong> en <strong>Postman</strong>. Daarnaast werk ik bij <strong>New York Pizza</strong>. Ik werk gestructureerd, ben altijd op tijd en maak af waar ik aan begin.
+                        </p>
+                        <p data-reveal style="--d:3" data-i18n="about.p3">
+                            Mijn grote doel? Ooit mijn eigen succesvolle game uitbrengen. 🎮
+                        </p>
+
+                        <ul class="facts" data-reveal style="--d:4">
+                            <li><i class="fas fa-graduation-cap"></i><span>ROC Mondriaan · <span data-i18n="about.fact.level">Niveau 4</span></span></li>
+                            <li><i class="fas fa-briefcase"></i><span><span data-i18n="about.fact.intern">Stagiair bij</span> Competa IT</span></li>
+                            <li><i class="fas fa-location-dot"></i><span>Pijnacker, <span data-i18n="about.fact.country">Nederland</span></span></li>
+                            <li><i class="fas fa-language"></i><span data-i18n="about.fact.langs">Nederlands · Engels · Arabisch</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="stat" data-reveal style="--d:0">
+                        <span class="stat-num"><span class="counter" data-target="6">0</span>+</span>
+                        <span class="stat-label" data-i18n="stats.projects">Projecten</span>
+                    </div>
+                    <div class="stat" data-reveal style="--d:1">
+                        <span class="stat-num"><span class="counter" data-target="15">0</span>+</span>
+                        <span class="stat-label" data-i18n="stats.tech">Technologieën</span>
+                    </div>
+                    <div class="stat" data-reveal style="--d:2">
+                        <span class="stat-num"><span class="counter" data-target="3">0</span></span>
+                        <span class="stat-label" data-i18n="stats.years">Jaar aan het coderen</span>
+                    </div>
+                    <div class="stat" data-reveal style="--d:3">
+                        <span class="stat-num"><span class="counter" data-target="3">0</span></span>
+                        <span class="stat-label" data-i18n="stats.langs">Talen die ik spreek</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ERVARING & OPLEIDING ========== -->
+        <section id="experience" class="section section-alt">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="section-kicker">02 · <span data-i18n="exp.kicker">Mijn pad</span></span>
+                    <h2 class="section-title" data-i18n="exp.title">Ervaring &amp; opleiding</h2>
+                </div>
+
+                <div class="timeline" id="timeline">
+                    <div class="timeline-line"><div class="timeline-fill" id="timelineFill"></div></div>
+
+                    <!-- Competa IT -->
+                    <article class="tl-item" data-reveal>
+                        <div class="tl-dot tl-dot-live"><i class="fas fa-code"></i></div>
+                        <div class="tl-card">
+                            <div class="tl-top">
+                                <span class="tl-date">2026 – <span data-i18n="exp.now">heden</span></span>
+                                <span class="tl-tag tl-tag-live"><span class="pulse-dot"></span> <span data-i18n="exp.current">Nu</span></span>
+                            </div>
+                            <h3 class="tl-title" data-i18n="exp.competa.role">Stagiair Software Development</h3>
+                            <p class="tl-org">Competa IT</p>
+                            <ul class="tl-list">
+                                <li data-i18n="exp.competa.b1">Meewerken aan softwareprojecten binnen een professioneel ontwikkelteam</li>
+                                <li data-i18n="exp.competa.b2">Ontwikkelen met TypeScript, Prisma en PostgreSQL</li>
+                                <li data-i18n="exp.competa.b3">API's testen met Postman</li>
+                            </ul>
+                            <div class="tl-tech">
+                                <span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Postman</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- New York Pizza -->
+                    <article class="tl-item" data-reveal>
+                        <div class="tl-dot tl-dot-live"><i class="fas fa-pizza-slice"></i></div>
+                        <div class="tl-card">
+                            <div class="tl-top">
+                                <span class="tl-date"><span data-i18n="exp.jul">jul</span> 2026 – <span data-i18n="exp.now">heden</span></span>
+                                <span class="tl-tag tl-tag-live"><span class="pulse-dot"></span> <span data-i18n="exp.current">Nu</span></span>
+                            </div>
+                            <h3 class="tl-title" data-i18n="exp.nyp.role">Medewerker</h3>
+                            <p class="tl-org">New York Pizza</p>
+                            <ul class="tl-list">
+                                <li data-i18n="exp.nyp.b1">Bestellingen snel en nauwkeurig afhandelen</li>
+                                <li data-i18n="exp.nyp.b2">Klantvriendelijk werken, ook tijdens drukke diensten</li>
+                                <li data-i18n="exp.nyp.b3">Samenwerken in een team</li>
+                            </ul>
+                        </div>
+                    </article>
+
+                    <!-- ROC Mondriaan -->
+                    <article class="tl-item" data-reveal>
+                        <div class="tl-dot"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="tl-card">
+                            <div class="tl-top">
+                                <span class="tl-date">2023 – 2027</span>
+                                <span class="tl-tag" data-i18n="exp.education">Opleiding</span>
+                            </div>
+                            <h3 class="tl-title" data-i18n="exp.roc.role">Software Developer · Niveau 4</h3>
+                            <p class="tl-org">ROC Mondriaan · Delft</p>
+                            <p class="tl-text" data-i18n="exp.roc.text">
+                                Gewerkt met PHP, Symfony, Next.js, HTML, CSS, JavaScript, Bootstrap en Tailwind CSS. Ervaring met responsive websites, databases en zowel front-end als back-end, en samenwerken via GitHub.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- Lidl -->
+                    <article class="tl-item" data-reveal>
+                        <div class="tl-dot"><i class="fas fa-store"></i></div>
+                        <div class="tl-card">
+                            <div class="tl-top">
+                                <span class="tl-date"><span data-i18n="exp.feb">feb</span> 2023 – <span data-i18n="exp.dec">dec</span> 2025</span>
+                            </div>
+                            <h3 class="tl-title" data-i18n="exp.lidl.role">Vakkenvuller / Verkoopmedewerker</h3>
+                            <p class="tl-org">Lidl · Pijnacker</p>
+                            <ul class="tl-list">
+                                <li data-i18n="exp.lidl.b1">Schappen aanvullen en de winkel netjes houden</li>
+                                <li data-i18n="exp.lidl.b2">Klanten helpen en vragen beantwoorden</li>
+                                <li data-i18n="exp.lidl.b3">Kassawerkzaamheden uitvoeren</li>
+                                <li data-i18n="exp.lidl.b4">Samenwerken in een team en werken volgens planning</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS ========== -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="section-kicker">03 · Skills</span>
+                    <h2 class="section-title" data-i18n="skills.title">Mijn toolbox</h2>
+                    <p class="section-sub" data-i18n-html="skills.sub">Technologieën waar ik mee werk. Items met <span class="new-tag">Nieuw</span> leer ik op dit moment.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-group spotlight" data-reveal style="--d:0">
+                        <div class="skill-group-head">
+                            <span class="skill-group-icon"><i class="fas fa-palette"></i></span>
+                            <h3>Front-end</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="">HTML5</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="">CSS3</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="">JavaScript</li>
+                            <li class="is-new"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" alt="">TypeScript<span class="new-tag" data-i18n="skills.new">Nieuw</span></li>
+                            <li><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg" alt="">Next.js</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="">Tailwind CSS</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="">Bootstrap</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group spotlight" data-reveal style="--d:1">
+                        <div class="skill-group-head">
+                            <span class="skill-group-icon"><i class="fas fa-server"></i></span>
+                            <h3 data-i18n="skills.backend">Back-end &amp; data</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="">PHP</li>
+                            <li><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/symfony/symfony-original.svg" alt="">Symfony</li>
+                            <li class="is-new"><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg" alt="">Prisma<span class="new-tag" data-i18n="skills.new">Nieuw</span></li>
+                            <li class="is-new"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="">PostgreSQL<span class="new-tag" data-i18n="skills.new">Nieuw</span></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="">MySQL / phpMyAdmin</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group spotlight" data-reveal style="--d:2">
+                        <div class="skill-group-head">
+                            <span class="skill-group-icon"><i class="fas fa-screwdriver-wrench"></i></span>
+                            <h3 data-i18n="skills.tools">Tools &amp; workflow</h3>
+                        </div>
+                        <ul class="skill-list">
+                            <li class="is-new"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" alt="">Postman<span class="new-tag" data-i18n="skills.new">Nieuw</span></li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="">Git</li>
+                            <li><img class="invert" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="">GitHub</li>
+                            <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="">Linux</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-group spotlight" data-reveal style="--d:3">
+                        <div class="skill-group-head">
+                            <span class="skill-group-icon"><i class="fas fa-user-check"></i></span>
+                            <h3 data-i18n="skills.soft">Soft skills &amp; talen</h3>
+                        </div>
+                        <ul class="skill-list skill-list-plain">
+                            <li><i class="fas fa-list-check"></i><span data-i18n="skills.s1">Gestructureerd</span></li>
+                            <li><i class="fas fa-clock"></i><span data-i18n="skills.s2">Altijd op tijd</span></li>
+                            <li><i class="fas fa-people-group"></i><span data-i18n="skills.s3">Teamspeler</span></li>
+                            <li><i class="fas fa-seedling"></i><span data-i18n="skills.s4">Leergierig</span></li>
+                        </ul>
+                        <div class="lang-bars">
+                            <div class="lang-row"><span data-i18n="skills.nl">Nederlands</span><span class="dots" data-lvl="4" aria-label="4/5"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <div class="lang-row"><span data-i18n="skills.en">Engels</span><span class="dots" data-lvl="4" aria-label="4/5"><i></i><i></i><i></i><i></i><i></i></span></div>
+                            <div class="lang-row"><span data-i18n="skills.ar">Arabisch</span><span class="dots" data-lvl="3" aria-label="3/5"><i></i><i></i><i></i><i></i><i></i></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTEN ========== -->
+        <section id="projects" class="section section-alt">
+            <div class="container">
+                <div class="section-head" data-reveal>
+                    <span class="section-kicker">04 · <span data-i18n="projects.kicker">Projecten</span></span>
+                    <h2 class="section-title" data-i18n="projects.title">Dingen die ik heb gebouwd</h2>
+                </div>
+
+                <div class="filters" data-reveal role="group" aria-label="Filter projecten">
+                    <button class="filter-btn active" data-filter="all" type="button" aria-pressed="true" data-i18n="projects.all">Alles</button>
+                    <button class="filter-btn" data-filter="web" type="button" aria-pressed="false" data-i18n="projects.web">Web apps</button>
+                    <button class="filter-btn" data-filter="game" type="button" aria-pressed="false">Games</button>
+                </div>
+
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Budget Buddy -->
+                    <article class="project-card tilt" data-category="web" data-reveal style="--d:0" data-tilt-max="5">
+                        <div class="project-media">
+                            <img src="img/projects/budget-buddy.png" alt="Budget Buddy" loading="lazy">
+                            <span class="project-type"><i class="fas fa-globe"></i> Web app</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Budget Buddy</h3>
+                            <p class="project-desc" data-i18n="projects.bb">Persoonlijke finance-app waarmee gebruikers hun uitgaven en spaardoelen bijhouden. Schoolproject gebouwd met Symfony.</p>
+                            <div class="project-tech"><span>PHP</span><span>Symfony</span><span>MySQL</span><span>Bootstrap</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/ROCMondriaanTIN/sd24-project-p05-budget-buddy-geldmaatje" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.code">Bekijk code</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- SDG Dashboard -->
+                    <article class="project-card tilt" data-category="web" data-reveal style="--d:1" data-tilt-max="5">
+                        <div class="project-media">
+                            <img src="img/projects/SDG.png" alt="SDG Dashboard" loading="lazy">
+                            <span class="project-type"><i class="fas fa-globe"></i> Web app</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">SDG Dashboard</h3>
+                            <p class="project-desc" data-i18n="projects.sdg">Dashboard dat data over de Sustainable Development Goals (SDG's) verzamelt en overzichtelijk visualiseert.</p>
+                            <div class="project-tech"><span>Next.js</span><span>Tailwind</span><span>MySQL</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/ROCMondriaanTIN/sd24-project-p06-dashboard-future-builders" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> <span data-i18n="projects.code">Bekijk code</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Connect Four -->
+                    <article class="project-card tilt" data-category="game" data-reveal style="--d:2" data-tilt-max="5">
+                        <div class="project-media">
+                            <img src="img/projects/connect.png" alt="Connect Four" loading="lazy">
+                            <span class="project-type"><i class="fas fa-gamepad"></i> Game</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Connect Four</h3>
+                            <p class="project-desc" data-i18n="projects.c4">Strategisch spel voor twee spelers met win-detectie in alle richtingen.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links">
+                                <a href="projects/4-op-rij.html" class="project-link"><i class="fas fa-play"></i> <span data-i18n="projects.play">Speel nu</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Higher / Lower -->
+                    <article class="project-card tilt" data-category="game" data-reveal style="--d:1" data-tilt-max="5">
+                        <div class="project-media">
+                            <img src="img/projects/higher-lower.png" alt="Higher / Lower" loading="lazy">
+                            <span class="project-type"><i class="fas fa-gamepad"></i> Game</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Higher / Lower</h3>
+                            <p class="project-desc" data-i18n="projects.hl">Dobbelspel waarin je raadt of de volgende worp hoger of lager is, met credits, een spin-machine en een leaderboard.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links">
+                                <a href="projects/hoger-lager.html" class="project-link"><i class="fas fa-play"></i> <span data-i18n="projects.play">Speel nu</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Whack-a-Mole -->
+                    <article class="project-card tilt" data-category="game" data-reveal style="--d:2" data-tilt-max="5">
+                        <div class="project-media">
+                            <img src="img/projects/whack.png" alt="Whack-a-Mole" loading="lazy">
+                            <span class="project-type"><i class="fas fa-gamepad"></i> Game</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Whack-a-Mole</h3>
+                            <p class="project-desc" data-i18n="projects.wam">Arcade-game waarin je zoveel mogelijk mollen raakt binnen de tijdslimiet.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links">
+                                <a href="projects/whack-a-mole.html" class="project-link"><i class="fas fa-play"></i> <span data-i18n="projects.play">Speel nu</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Tic Tac Toe -->
+                    <article class="project-card tilt" data-category="game" data-reveal style="--d:0" data-tilt-max="5">
+                        <div class="project-media">
+                            <img src="img/projects/tic-tac-toe.png" alt="Tic Tac Toe" loading="lazy">
+                            <span class="project-type"><i class="fas fa-gamepad"></i> Game</span>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title">Tic Tac Toe</h3>
+                            <p class="project-desc" data-i18n="projects.ttt">Klassiek boter-kaas-en-eieren voor twee spelers, met een strak en responsive design.</p>
+                            <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links">
+                                <a href="projects/tic-tac-toe.html" class="project-link"><i class="fas fa-play"></i> <span data-i18n="projects.play">Speel nu</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Binnenkort (brede kaart) -->
+                    <article class="project-card project-soon project-wide" data-category="web" data-reveal>
+                        <div class="project-media soon-media">
+                            <div class="soon-inner">
+                                <i class="fas fa-rocket"></i>
+                                <span data-i18n="projects.soon">In ontwikkeling</span>
+                            </div>
+                        </div>
+                        <div class="project-body">
+                            <h3 class="project-title" data-i18n="projects.newTitle">Nieuw full-stack project</h3>
+                            <p class="project-desc" data-i18n="projects.newDesc">Mijn volgende project bouw ik met mijn nieuwe stack. Houd deze plek in de gaten!</p>
+                            <div class="project-tech"><span>TypeScript</span><span>Prisma</span><span>PostgreSQL</span><span>Postman</span></div>
+                            <div class="project-links">
+                                <span class="project-link is-disabled"><i class="fas fa-hourglass-half"></i> <span data-i18n="projects.soonBtn">Binnenkort</span></span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="more-projects" data-reveal>
+                    <a href="https://github.com/KhalidBaker1" target="_blank" rel="noopener" class="btn btn-ghost magnetic">
+                        <i class="fab fa-github"></i> <span data-i18n="projects.more">Meer op GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT ========== -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-box" data-reveal>
+                    <div class="contact-glow" aria-hidden="true"></div>
+                    <span class="section-kicker">05 · Contact</span>
+                    <h2 class="contact-title" data-i18n-html="contact.title">Laten we samen iets <span class="gradient-text">gaafs</span> bouwen.</h2>
+                    <p class="contact-sub" data-i18n="contact.sub">Zoek je een gemotiveerde stagiair of junior developer, of wil je gewoon even sparren? Stuur me gerust een bericht!</p>
+
+                    <div class="email-row">
+                        <a href="mailto:khalidbaker21@gmail.com" class="email-big">khalidbaker21@gmail.com</a>
+                        <button type="button" class="copy-btn" id="copyEmail" data-email="khalidbaker21@gmail.com" aria-label="Kopieer e-mailadres">
+                            <i class="far fa-copy"></i> <span data-i18n="contact.copy">Kopieer</span>
+                        </button>
+                    </div>
+
+                    <div class="contact-cards">
+                        <a href="tel:+31638517900" class="contact-card magnetic">
+                            <i class="fas fa-phone"></i>
+                            <span class="cc-label" data-i18n="contact.phone">Telefoon</span>
+                            <span class="cc-value">+31 6 38517900</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/khalid-baker-0770a5367" target="_blank" rel="noopener" class="contact-card magnetic">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span class="cc-label">LinkedIn</span>
+                            <span class="cc-value">Khalid Baker</span>
+                        </a>
+                        <a href="https://github.com/KhalidBaker1" target="_blank" rel="noopener" class="contact-card magnetic">
+                            <i class="fab fa-github"></i>
+                            <span class="cc-label">GitHub</span>
+                            <span class="cc-value">@KhalidBaker1</span>
+                        </a>
+                        <a href="docs/Khalid-Baker-CV.pdf" download class="contact-card magnetic">
+                            <i class="fas fa-file-arrow-down"></i>
+                            <span class="cc-label">CV</span>
+                            <span class="cc-value" data-i18n="contact.download">Download PDF</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <a href="#home" class="logo"><span class="logo-bracket">&lt;</span>KB<span class="logo-slash">/</span><span class="logo-bracket">&gt;</span></a>
+            <p class="footer-text">&copy; <span id="year">2026</span> Khalid Baker · <span data-i18n="footer.made">Gebouwd met ❤️ en veel koffie</span></p>
+            <div class="footer-socials">
+                <a href="https://github.com/KhalidBaker1" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/khalid-baker-0770a5367" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:khalidbaker21@gmail.com" aria-label="E-mail"><i class="fas fa-envelope"></i></a>
+                <a href="tel:+31638517900" aria-label="Telefoon"><i class="fas fa-phone"></i></a>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <button class="to-top" id="toTop" type="button" aria-label="Terug naar boven"><i class="fas fa-arrow-up"></i></button>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<!-- Custom JS -->
-    <script src="js/main.js"></script>
-    <!-- Bootstrap & Custom JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

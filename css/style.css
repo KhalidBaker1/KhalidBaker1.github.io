@@ -87,6 +87,7 @@ section[id] { scroll-margin-top: calc(var(--nav-h) - 8px); }
 }
 
 img.invert { filter: invert(1); }
+img.mono { filter: brightness(0) invert(1); opacity: 0.85; }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 10px; }
@@ -624,7 +625,7 @@ html[lang="en"] .lang-opt[data-lang="en"] {
 }
 .float-badge img { width: 20px; height: 20px; }
 .fb-1 { top: -4px; right: 8%; animation-delay: 0s; }
-.fb-2 { bottom: 4px; left: -4%; animation-delay: -1.5s; }
+.fb-2 { bottom: -20px; left: 4%; animation-delay: -1.5s; }
 .fb-3 { top: 38%; left: -9%; animation-delay: -3s; }
 .fb-4 { bottom: 16%; right: -6%; animation-delay: -4.5s; }
 
@@ -1472,17 +1473,16 @@ html[lang="en"] .lang-opt[data-lang="en"] {
     align-items: stretch;
     gap: 4px;
     padding: 16px 20px 24px;
-    background: rgba(7, 16, 11, 0.97);
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    background: var(--bg);
     border-bottom: 1px solid var(--border);
+    box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8);
     opacity: 0;
     visibility: hidden;
     transform: translateY(-12px);
     transition: opacity 0.3s, transform 0.35s var(--ease), visibility 0.3s;
   }
   .nav-open .nav-links { opacity: 1; visibility: visible; transform: none; }
-  .nav-open.nav { background: rgba(7, 16, 11, 0.97); border-bottom-color: var(--border); }
+  .nav-open.nav { background: var(--bg); border-bottom-color: var(--border); }
   .nav-link { padding: 14px 12px; font-size: 1.05rem; border-radius: 12px; }
   .nav-link::after { left: auto; right: 16px; top: 50%; bottom: auto; transform: translateY(-50%) scale(0); }
   .nav-link.active::after { transform: translateY(-50%) scale(1); }
@@ -1500,7 +1500,7 @@ html[lang="en"] .lang-opt[data-lang="en"] {
   .float-badge { font-size: 0.72rem; padding: 6px 11px 6px 8px; }
   .float-badge img { width: 16px; height: 16px; }
   .fb-1 { right: 2%; top: 0; }
-  .fb-2 { left: 0; bottom: 0; }
+  .fb-2 { left: 0; bottom: -14px; }
   .fb-3, .fb-4 { display: none; }
   .projects-grid { grid-template-columns: 1fr; }
   .project-wide { flex-direction: column; }

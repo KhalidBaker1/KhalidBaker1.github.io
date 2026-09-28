@@ -295,7 +295,7 @@
         }
         lineEl = makeLine();
         lineEl.appendChild(caret);
-        setTimeout(step, 110);
+        setTimeout(step, 80);
         return;
       }
 
@@ -319,7 +319,7 @@
         tokenIndex += 1;
         chars = null;
       }
-      setTimeout(step, 16 + Math.random() * 38);
+      setTimeout(step, 10 + Math.random() * 26);
     }
 
     setTimeout(step, 1100);

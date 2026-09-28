@@ -206,15 +206,15 @@ svg {
 
 /* ---------- Hoofddeel ---------- */
 .main {
-  padding: 12mm 11mm 10mm 10mm;
+  padding: 10mm 11mm 8mm 10mm;
   font-size: 9pt;
-  line-height: 1.5;
+  line-height: 1.45;
   color: var(--ink-soft);
 }
 
 .cv-header {
-  padding-bottom: 5mm;
-  margin-bottom: 5mm;
+  padding-bottom: 4mm;
+  margin-bottom: 4.5mm;
   border-bottom: 2px solid var(--ink);
   position: relative;
 }
@@ -246,7 +246,7 @@ svg {
 .tagline { margin-top: 1mm; font-size: 8.8pt; color: var(--ink-muted); }
 .sep { color: var(--accent); margin: 0 1mm; }
 
-.block + .block { margin-top: 5.2mm; }
+.block + .block { margin-top: 4.2mm; }
 .block-title {
   display: flex;
   align-items: center;
@@ -257,7 +257,7 @@ svg {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--ink);
-  margin-bottom: 3mm;
+  margin-bottom: 2.4mm;
 }
 .block-title svg {
   width: 6.4mm;
@@ -283,7 +283,7 @@ svg {
   padding-left: 4.5mm;
   border-left: 1.5px solid var(--line);
 }
-.entry + .entry { margin-top: 3.6mm; }
+.entry + .entry { margin-top: 3mm; }
 .entry::before {
   content: '';
   position: absolute;
@@ -340,7 +340,7 @@ svg {
   display: grid;
   grid-template-columns: 27mm 1fr;
   column-gap: 3mm;
-  padding: 1.4mm 0;
+  padding: 1mm 0;
   border-bottom: 1px dashed var(--line);
 }
 .projects li:last-child { border-bottom: 0; }
